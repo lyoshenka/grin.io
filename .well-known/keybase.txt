@@ -1,0 +1,69 @@
+==================================================================
+https://keybase.io/lyoshenka
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://grin.io
+  * I am lyoshenka (https://keybase.io/lyoshenka) on keybase.
+  * I have a public key with fingerprint DC91 BD1E 06C4 01D7 AA36  8ADF E78F F016 2B0D 303D
+
+To claim this, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "fingerprint": "dc91bd1e06c401d7aa368adfe78ff0162b0d303d",
+            "host": "keybase.io",
+            "key_id": "E78FF0162B0D303D",
+            "uid": "6e2c2705bceb0497a38dca0412348900",
+            "username": "lyoshenka"
+        },
+        "service": {
+            "hostname": "grin.io",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1397421872,
+    "expire_in": 157680000,
+    "prev": "65d192245ce18b313a8a285aca6ae955abd54fee5c50c638abb7aeed6ec8819e",
+    "seqno": 3,
+    "tag": "signature"
+}
+
+with the aforementioned key, yielding the PGP signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: GnuPG v1.4.11 (GNU/Linux)
+
+owGbwMvMwMS4bvOHzh9ZSlsZTx94m8QQ7PXdoFopKT+lUsmqWik7FUylZealpxYV
+FGXmlShZKaUkWxompRimGpglmxgYppgnJhqbWSSmpKWaW6SlGRiaGSUZpBgbGKco
+6Shl5BeDdACNSUosTtXLzAeKATnxmSlAUVdzCzc3kHonAxegehegXClYwizVKNnI
+3MA0KTk1ycDE0jzR2CIlOdHAxNDI2MTC0sAApLA4tSgvMTcVqDqnMr84IzUvO1Gp
+VkcJKFyWmZwKcjTIbqiSdKDLIZYXFOWX5Cfn5wAFM0pKCqxAekoqC0CKylOT4qHa
+45My81KAfgZqKEstKs7Mz1OyMgSqTC7JBJlnaGxpbmJkaGFupKOUWlGQWZQanwlS
+YWpuZmEABCBrUstAHjFNMbQ0MjIxTU41tEgyNjROtEg0sjBNTE40S0y1NDVNTEox
+NUlLTTVNNjVINjO2SExKMk9MTU0xS022sDC0TFUCeagwL1/JyhjozMR0oJHFmel5
+iSWlRalKtZ1MMiwMjEwMbKxMoFhj4OIUgMWl63v+v9Ji2vU/jr1btnuq4+RKCY8v
+ARK3Gacn7Es5/GjmjLjougnvj5cwLJb5vT8pcOIkf9ktd+wfVWzR/VbssMDiySVp
+m8AVVqknnqd750w++rj86b7pTOHrVXbLeQQI2jsGrkuo6nny7Zexu2PW8/fKSntD
+3B6VpQtvWSrG9md+n6xKg94Pof0XTHoClb/smRX8eGZ40kfbWOmdpxROJNXtfuZw
+OjPkVHfvHa7NHZ4sevMNH4gcuugq13XVvLX3UoGctWrVsSX5rw5bbcrwrZ87aW2F
+FOPh00LHTI/xvNBsmNX44cVHn987n6TGHdPIlamzDNohNNN2p+T2iZai/26pH6x1
+47l38cPKKZbWj2dkRPcyTK/bN3W3x0HePLa/v2WeMN7vW/9YJXLzzcUXbpdmbLb+
+9n6fXNUO89610/Um7LhYe8+mY+Ulz7R/TqzfvnkdkD3DcXJ/XVJrb4NgqP5y753m
+xVyMSyzE/axWl3LuZ9aYKWoRJ/lq3tbYVX/vRD3T25f0evXSIK+UK+//3CkwL7l+
+YJ3URp6EQ1vyow/ueHlHtXjjTJZJKWcfSdeay55+k9354DD7jodSOl6V3OK3Y3cu
+upszu0xJmO2D8v9L78/aL307R57jxb6r51aWvJNvXT4nWT/IO+rIbBOfY8kilZ4G
+TpPsRJ2fT9jnVV9ytVr8W++qIl73GdmlFacdFqyoq5iUsP2uxrWkRdlCi3wA
+=cEQb
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/lyoshenka
+
+==================================================================
