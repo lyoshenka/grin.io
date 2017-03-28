@@ -20,5 +20,9 @@ http {
     {
       alias /app/www/well-known/$1;
     }
+
+    location = /about {
+      return 307 /;
+    }
  }
 }
