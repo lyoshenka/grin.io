@@ -16,6 +16,8 @@ http {
     root /app/www;
     index index.html;
 
+    port_in_redirect off;
+
     location ~ ^/.well-known/(.*)$
     {
       alias /app/www/well-known/$1;
