@@ -95,6 +95,7 @@ new FontFaceObserver("Sofia Pro").load().then(function () {
 </script>
 
 <script>
+  'use strict';
   String.prototype.replaceAt=function(index, replacement) {
       return this.substr(0, index) + replacement+ this.substr(index + replacement.length);
   }
@@ -130,7 +131,7 @@ new FontFaceObserver("Sofia Pro").load().then(function () {
       } else {
         line.split("").forEach(function(char, charNo) {
           if (char == "o" || char == "O") {
-            originalChar = original[lineNo][charNo];
+            var originalChar = original[lineNo][charNo];
             if (originalChar == "o" || originalChar == "O") {
               originalChar = " ";
             }
