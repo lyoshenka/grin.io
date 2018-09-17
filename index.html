@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Alex Grintsvayg, Web Wizard</title>
-  <style>@font-face{font-family:'Sofia Pro';src:url('assets/fonts/sofia-pro-regular-webfont.eot');src:url('assets/fonts/sofia-pro-regular-webfont.woff') format('woff'), url('assets/fonts/sofia-pro-regular-webfont.ttf') format('truetype'), url('assets/fonts/sofia-pro-regular-webfont.svg') format('svg');font-weight:normal;font-style:normal;}*,*:before,*:after{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}html{font-size:10px;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;}body{margin:0;font-size:22px;margin:0;color:#e1eef6;background:#004e66;font-family:sans-serif;-webkit-font-smoothing:antialiased}.fonts-loaded body{font-family:"Sofia Pro", sans-serif;letter-spacing:0.3px}html:not(.fonts-loaded) body{font-family:Arial,sans-serif;line-height:1.4;letter-spacing:0.6px;}main{margin:0 auto;padding:20px;max-width:1300px;display:-webkit-box;display:-moz-box;display:-ms-flexbox;display:-webkit-flex;display:flex;-webkit-flex-flow:row wrap;flex-flow:row wrap;-webkit-justify-content:space-around;justify-content:space-around}@media (min-height:400px) and (min-width:400px){main{margin-top:10vh}}section{display:block;width:550px}h1,h2{font-weight:normal}h1{font-size:48px;margin:0.67em 0 1rem;line-height:1}h2{margin-top:0;margin-bottom:50px;font-size:30px}p{margin-bottom:36px}a{background-color:transparent;text-decoration:none;color:#fcbe32;transition:150ms;-webkit-transition:150ms;-ms-transition:150ms}a:active,a:hover{outline-width:0;color:#f70;border-bottom:solid 1px #f70}pre{font-size:2.8vw;font-weight:bold;line-height:normal;margin:0;font-family:Courier,"Courier New",Consolas,"Liberation Mono",monospace}@media (min-width:550px){pre{font-size:16.5px}}</style>
+  <link rel="stylesheet" type="text/css" href="/assets/css/wizard.css">
 </head>
 <body>
 <main>
@@ -79,9 +79,7 @@
   </section>
 </main>
 
-<script>(function(){var k=!!document.addEventListener;function l(a,b){k?a.addEventListener("scroll",b,!1):a.attachEvent("scroll",b)}function v(a){document.body?a():k?document.addEventListener("DOMContentLoaded",a):document.attachEvent("onreadystatechange",function(){"interactive"!=document.readyState&&"complete"!=document.readyState||a()})};function w(a){this.a=document.createElement("div");this.a.setAttribute("aria-hidden","true");this.a.appendChild(document.createTextNode(a));this.b=document.createElement("span");this.c=document.createElement("span");this.h=document.createElement("span");this.f=document.createElement("span");this.g=-1;this.b.style.cssText="max-width:none;display:inline-block;position:absolute;height:100%;width:100%;overflow:scroll;font-size:16px;";this.c.style.cssText="max-width:none;display:inline-block;position:absolute;height:100%;width:100%;overflow:scroll;font-size:16px;";this.f.style.cssText="max-width:none;display:inline-block;position:absolute;height:100%;width:100%;overflow:scroll;font-size:16px;";this.h.style.cssText="display:inline-block;width:200%;height:200%;font-size:16px;max-width:none;";this.b.appendChild(this.h);this.c.appendChild(this.f);this.a.appendChild(this.b);this.a.appendChild(this.c)}
-function y(a,b){a.a.style.cssText="max-width:none;min-width:20px;min-height:20px;display:inline-block;overflow:hidden;position:absolute;width:auto;margin:0;padding:0;top:-999px;left:-999px;white-space:nowrap;font:"+b+";"}function z(a){var b=a.a.offsetWidth,c=b+100;a.f.style.width=c+"px";a.c.scrollLeft=c;a.b.scrollLeft=a.b.scrollWidth+100;return a.g!==b?(a.g=b,!0):!1}function A(a,b){function c(){var a=m;z(a)&&null!==a.a.parentNode&&b(a.g)}var m=a;l(a.b,c);l(a.c,c);z(a)};function B(a,b){var c=b||{};this.family=a;this.style=c.style||"normal";this.weight=c.weight||"normal";this.stretch=c.stretch||"normal"}var C=null,D=null,H=!!window.FontFace;function I(){if(null===D){var a=document.createElement("div");try{a.style.font="condensed 100px sans-serif"}catch(b){}D=""!==a.style.font}return D}function J(a,b){return[a.style,a.weight,I()?a.stretch:"","100px",b].join(" ")}
-B.prototype.load=function(a,b){var c=this,m=a||"BESbswy",x=b||3E3,E=(new Date).getTime();return new Promise(function(a,b){if(H){var K=new Promise(function(a,b){function e(){(new Date).getTime()-E>=x?b():document.fonts.load(J(c,c.family),m).then(function(c){1<=c.length?a():setTimeout(e,25)},function(){b()})}e()}),L=new Promise(function(a,c){setTimeout(c,x)});Promise.race([L,K]).then(function(){a(c)},function(){b(c)})}else v(function(){function q(){var b;if(b=-1!=f&&-1!=g||-1!=f&&-1!=h||-1!=g&&-1!=h)(b=f!=g&&f!=h&&g!=h)||(null===C&&(b=/AppleWebKit\/([0-9]+)(?:\.([0-9]+))/.exec(window.navigator.userAgent),C=!!b&&(536>parseInt(b[1],10)||536===parseInt(b[1],10)&&11>=parseInt(b[2],10))),b=C&&(f==r&&g==r&&h==r||f==t&&g==t&&h==t||f==u&&g==u&&h==u)),b=!b;b&&(null!==d.parentNode&&d.parentNode.removeChild(d),clearTimeout(G),a(c))}function F(){if((new Date).getTime()-E>=x)null!==d.parentNode&&d.parentNode.removeChild(d),b(c);else{var a=document.hidden;if(!0===a||void 0===a)f=e.a.offsetWidth,g=n.a.offsetWidth,h=p.a.offsetWidth,q();G=setTimeout(F,50)}}var e=new w(m),n=new w(m),p=new w(m),f=-1,g=-1,h=-1,r=-1,t=-1,u=-1,d=document.createElement("div"),G=0;d.dir="ltr";y(e,J(c,"sans-serif"));y(n,J(c,"serif"));y(p,J(c,"monospace"));d.appendChild(e.a);d.appendChild(n.a);d.appendChild(p.a);document.body.appendChild(d);r=e.a.offsetWidth;t=n.a.offsetWidth;u=p.a.offsetWidth;F();A(e,function(a){f=a;q()});y(e,J(c,'"'+c.family+'",sans-serif'));A(n,function(a){g=a;q()});y(n,J(c,'"'+c.family+'",serif'));A(p,function(a){h=a;q()});y(p,J(c,'"'+c.family+'",monospace'))})})};window.FontFaceObserver=B;window.FontFaceObserver.prototype.check=window.FontFaceObserver.prototype.load=B.prototype.load;"undefined"!==typeof module&&(module.exports=window.FontFaceObserver);}());</script>
+<script type="text/javascript" src="/assets/js/font.js"></script>
 <script>
 new FontFaceObserver("Sofia Pro").load().then(function () {
   document.documentElement.className += " fonts-loaded";
@@ -94,71 +92,8 @@ new FontFaceObserver("Sofia Pro").load().then(function () {
   e.parentNode.style.display='';
 </script>
 
-<script>
-  'use strict';
-  String.prototype.replaceAt=function(index, replacement) {
-      return this.substr(0, index) + replacement+ this.substr(index + replacement.length);
-  }
-  if ( !window.requestAnimationFrame ) {
-    window.requestAnimationFrame = ( function() {
-      return window.webkitRequestAnimationFrame ||
-      window.mozRequestAnimationFrame ||
-      window.oRequestAnimationFrame ||
-      window.msRequestAnimationFrame ||
-      function( /* function FrameRequestCallback */ callback, /* DOMElement Element */ element ) {
-        window.setTimeout( callback, 1000 / 60 );
-      };
-    } )();
-  }
-  function getRandomIntInclusive(min, max) {
-    min = Math.ceil(min);
-    max = Math.floor(max);
-    return Math.floor(Math.random() * (max - min + 1)) + min; //The maximum is inclusive and the minimum is inclusive
-  }
-  function chance(x, ofY) {
-    // return true x times out ofY
-    return getRandomIntInclusive(1,ofY) <= x;
-  }
-  const pre = document.getElementById("art");
-  const content = "   "+pre.innerHTML.split("-->")[1];
-  const original = content.split("\n");
-  const lines = content.split("\n");
-  const bubbleOrigin = [19, 24];
-  function bubbleStep() {
-    lines.forEach(function(line, lineNo){
-      if (lineNo == 0) {
-        lines[lineNo] = line.replace(/[o|O]/, " ")
-      } else {
-        line.split("").forEach(function(char, charNo) {
-          if (char == "o" || char == "O") {
-            var originalChar = original[lineNo][charNo];
-            if (originalChar == "o" || originalChar == "O") {
-              originalChar = " ";
-            }
-            lines[lineNo] = lines[lineNo].replaceAt(charNo, originalChar);
-            if (chance(1,2)) {
-              char = {"o": "O", "O": "o"}[char];
-            }
-            lines[lineNo-1] = lines[lineNo-1].replaceAt(Math.max(0, charNo-2+getRandomIntInclusive(0,3)), char);
-          }
-        })
-      }
-    });
-    if (chance(3,5)) {
-      const x = bubbleOrigin[0];
-      const y = bubbleOrigin[1]-2+getRandomIntInclusive(0,3);
-      lines[x] = lines[x].replaceAt(y, "oO".charAt(getRandomIntInclusive(0,1)));
-    }
-    pre.innerHTML = pre.innerHTML.split("-->")[0] + "-->" + lines.join("\n");
-  }
-  function animate() {
-    window.requestAnimationFrame(function(){
-      bubbleStep();
-      setTimeout(animate, 150);
-    });
-  }
-  animate();
-</script>
+<script type="text/javascript" src="/assets/js/bubbles.js"></script>
+
 <!-- Piwik -->
 <script type="text/javascript">
   var _paq = _paq || [];
@@ -173,5 +108,6 @@ new FontFaceObserver("Sofia Pro").load().then(function () {
     g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
   })();
 </script>
+
 </body>
 </html>
