@@ -1,1 +1,12 @@
 include: [".well-known"]
+exclude: ["CNAME"]
+collections:
+  pages:
+    output: true
+    permalink: /:name
+
+defaults:
+  - scope:
+      type: "pages"
+    values:
+      layout: "page"

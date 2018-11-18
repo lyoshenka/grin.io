@@ -4,32 +4,35 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Alex Grintsvayg, Web Wizard</title>
-  <link rel="stylesheet" type="text/css" href="/assets/css/wizard.css">
+  <link rel="stylesheet" type="text/css" href="/css/wizard.css">
 </head>
 <body>
 <main>
   <section>
-    <h1>Alex <span>Grin</span>tsvayg</h1>
-    <h2>Web Wizard</h2>
-    <p>
-      I'm currently working on <a href="https://lbry.io">LBRY</a> and <a href="http://usetopscore.com">Topscore</a>.<br>
-      Before that: <a href="http://www.launchrock.com/">Launchrock</a>, <a href="http://www.withfit.com/page/faq">WithFit</a>.
-    </p>
-    <p>
-      Offline, I play ultimate frisbee, <a href="https://travel.grin.io">travel the world</a>, and generally use my superpowers for good.
-    </p>
-    <p>
-      Can't get enough? Here's what I'm
-      <a href="https://github.com/lyoshenka" rel=me>hacking on</a>,
-      <!--      <a href="https://blog.grin.io" data-link-alt="writing">writing</a>, -->
-      <a href="https://www.goodreads.com/user/show/7456812-grin">reading</a>,
-      <a href="http://last.fm/user/lyoshenka">listening to</a>,
-      <a href="http://stackoverflow.com/users/182709/lyoshenka?tab=profile">helping others with</a>.
-    </p>
-    <p style="display:none">
-      Don't just sit there. Say something!<br>
-      <a id="e" href="mailto:">My email is my first initial, then the symbol, then this domain</a>
-    </p>
+    <div>
+      <h1>Alex <span>Grin</span>tsvayg</h1>
+      <h2>Web Wizard</h2>
+      <p>
+        I'm working on <a href="https://lbry.io">LBRY</a>, a decentralized marketplace for accessing and publishing digital content.
+      </p>
+      <p>
+        Previously: <a href="http://usetopscore.com">Topscore</a>, <a href="http://www.launchrock.com/">Launchrock</a>, <a href="http://www.withfit.com/page/faq">WithFit</a>.
+      </p>
+      <p>
+        Offline, I play ultimate frisbee, <a href="https://travel.grin.io">travel the world</a>, and use my superpowers for good.
+      </p>
+      <p>
+        Can't get enough? Here's what I'm
+        <a href="https://github.com/lyoshenka" rel=me>hacking on</a>,
+        <!--      <a href="https://blog.grin.io" data-link-alt="writing">writing</a>, -->
+        <a href="https://www.goodreads.com/user/show/7456812-grin">reading</a>,
+        <a href="http://last.fm/user/lyoshenka">listening to</a>,
+        <a href="http://stackoverflow.com/users/182709/lyoshenka?tab=profile">helping others with</a>.
+      </p>
+      <p style="display:none">
+        Reach me at <a id="e" href="mailto:">My email is my first initial, then the symbol, then this domain</a>.
+      </p>
+    </div>
   </section>
   <section>
     <pre id="art">
@@ -79,7 +82,7 @@
   </section>
 </main>
 
-<script type="text/javascript" src="/assets/js/font.js"></script>
+<script type="text/javascript" src="/js/font.js"></script>
 <script>
 new FontFaceObserver("Sofia Pro").load().then(function () {
   document.documentElement.className += " fonts-loaded";
@@ -92,12 +95,11 @@ new FontFaceObserver("Sofia Pro").load().then(function () {
   e.parentNode.style.display='';
 </script>
 
-<script type="text/javascript" src="/assets/js/bubbles.js"></script>
+<script type="text/javascript" src="/js/bubbles.js"></script>
 
 <!-- Piwik -->
 <script type="text/javascript">
   var _paq = _paq || [];
-  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
   _paq.push(['trackPageView']);
   _paq.push(['enableLinkTracking']);
   (function() {

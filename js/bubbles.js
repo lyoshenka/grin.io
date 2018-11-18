@@ -1,6 +1,9 @@
 'use strict';
 
 String.prototype.replaceAt=function(index, replacement) {
+    if (replacement === undefined) {
+      replacement = "";
+    }
     return this.substr(0, index) + replacement+ this.substr(index + replacement.length);
 }
 
@@ -39,14 +42,14 @@ function bubbleStep() {
       lines[lineNo] = line.replace(/[o|O]/, " ")
     } else {
       line.split("").forEach(function(char, charNo) {
-        if (char == "o" || char == "O") {
+        if (char === "o" || char === "O") {
           var originalChar = original[lineNo][charNo];
           if (originalChar == "o" || originalChar == "O") {
             originalChar = " ";
           }
           lines[lineNo] = lines[lineNo].replaceAt(charNo, originalChar);
           if (chance(1,2)) {
-            char = {"o": "O", "O": "o"}[char];
+            char = (char === char.toUpperCase() ? char.toLowerCase() : char.toUpperCase());
           }
           lines[lineNo-1] = lines[lineNo-1].replaceAt(Math.max(0, charNo-2+getRandomIntInclusive(0,3)), char);
         }

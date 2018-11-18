@@ -1,0 +1,68 @@
+@font-face {
+  font-family: 'Sorts Mill Goudy';
+  src: url('/font/sorts-mill-goudy/GoudyStM-webfont.eot'); /* IE9 Compat Modes */
+  src: url('/font/sorts-mill-goudy/GoudyStM-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('/font/sorts-mill-goudy/GoudyStM-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+       url('/font/sorts-mill-goudy/GoudyStM-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('/font/sorts-mill-goudy/GoudyStM-webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+svg {
+    fill: currentColor;
+}
+
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+@media screen and (min-width: 92.5rem){
+  html{
+    margin-left:calc(100vw - 100%);
+    margin-right:0;
+  }
+}
+
+body {
+    max-width: 700px;
+    margin: 1rem auto 5rem;
+    font-family: "Sorts Mill Goudy", serif;
+    font-size: 22px;
+    color: #333;
+    line-height:  1.5;
+}
+
+#home {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+#home a{
+  color: #333;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+a, a:visited, a:hover, a:focus, #home a:hover {
+  color: #3D9970;
+  text-decoration-color:#3D9970;
+  text-decoration-skip: ink;
+  text-decoration-skip-ink: auto;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.end {
+  text-align: center;
+}
