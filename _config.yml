@@ -1,5 +1,20 @@
-include: [".well-known"]
-exclude: ["CNAME"]
+include:
+  - .well-known
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - /vendor
+  - readme.md
+  - CNAME
+
+safe: true
+
+#plugins:
+#  - jekyll-redirect-from
+#whitelist:
+#  - jekyll-redirect-from
+
 collections:
   pages:
     output: true
