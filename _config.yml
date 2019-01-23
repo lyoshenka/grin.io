@@ -1,3 +1,5 @@
+title: Grin
+
 include:
   - .well-known
 
@@ -9,6 +11,8 @@ exclude:
   - CNAME
 
 safe: true
+
+permalink: /:title
 
 #plugins:
 #  - jekyll-redirect-from
@@ -25,3 +29,7 @@ defaults:
       type: "pages"
     values:
       layout: "page"
+  - scope:
+      type: "posts"
+    values:
+      layout: "post"

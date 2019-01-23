@@ -1,0 +1,154 @@
+@import "base";
+
+@font-face {
+  font-family: "Sofia Pro";
+  src: url("/font/sofia-pro/sofia-pro-regular-webfont.eot");
+  src: url("/font/sofia-pro/sofia-pro-regular-webfont.woff") format("woff"),
+    url("/font/sofia-pro/sofia-pro-regular-webfont.ttf") format("truetype"),
+    url("/font/sofia-pro/sofia-pro-regular-webfont.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  font-size: 22px;
+  margin: 0;
+  color: $silver;
+  background: $blue;
+  font-family: "Sofia Pro", Arial, sans-serif;
+  letter-spacing: 0.3px;
+  -webkit-font-smoothing: antialiased;
+}
+
+main {
+  margin: 0 auto;
+  padding: 20px;
+  max-width: 1300px;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -webkit-justify-content: space-around;
+  justify-content: space-around;
+}
+
+section {
+  width: 550px;
+  display: flex;
+  align-items: center;
+}
+
+h1,
+h2 {
+  font-weight: normal;
+}
+h1 {
+  font-size: 48px;
+  margin: 0.67em 0 1rem;
+  line-height: 1;
+}
+h2 {
+  margin-top: 0;
+  margin-bottom: 50px;
+  font-size: 30px;
+}
+
+p {
+  margin-bottom: 36px;
+}
+
+a {
+  background-color: transparent;
+  text-decoration: none;
+  color: $link;
+  transition: 150ms;
+  -webkit-transition: 150ms;
+  -ms-transition: 150ms;
+
+  &:active,
+  &:hover {
+    outline-width: 0;
+    color: $active-link;
+    border-bottom: solid 1px $active-link;
+  }
+}
+
+pre {
+  font-size: 2.8vw;
+  font-weight: bold;
+  line-height: normal;
+  margin: 0;
+  font-family: Courier, "Courier New", Consolas, "Liberation Mono", monospace;
+}
+@media (min-width: 550px) {
+  pre {
+    font-size: 16.5px;
+  }
+}
+
+ul {
+  list-style: none;
+  margin: 1rem 0;
+  padding: 0;
+
+  li {
+    padding-left: 2rem;
+    position: relative;
+
+    &:before {
+      display: block;
+      content: "-";
+      position: absolute;
+      top: -0.5rem;
+      left: 0;
+      font-size: 2.4rem;
+    }
+  }
+}
+
+.posts {
+  padding-left: 1.5rem;
+}
+
+svg {
+  fill: currentColor;
+}
+.social {
+  display: flex;
+  align-content: space-around;
+  width: 65%;
+  margin-top: 6rem;
+
+  a {
+    flex: 1;
+
+    &:active,
+    &:hover {
+      border-bottom: none;
+    }
+  }
+
+  svg {
+    height: 2.4rem;
+    width: 2.4rem;
+  }
+}

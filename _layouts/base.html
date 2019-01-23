@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="{{ site.lang | default: "en-US" }}">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <link rel="stylesheet" href="/css/normalize.css" />
+  <link rel="stylesheet" href="/css/post.css" />
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>{{ site.title }}</title>
+
+  <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+  <div id="home">
+    <a href="/">
+      <svg height="20px" width="24px" style="margin-bottom:-2px;" version="1.1" viewBox="0 0 512 512" x="0px" y="0px"
+        xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <g>
+          <path d="M512,296l-96-96V56h-64v80l-96-96L0,296v16h64v160h160v-96h64v96h160V312h64V296z"></path>
+        </g>
+      </svg>
+    </a>
+  </div>
+
+  {{ content }}
+
+  {% include piwik.html %}
+</body>
+
+</html>
