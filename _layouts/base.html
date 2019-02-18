@@ -17,18 +17,21 @@
 </head>
 
 <body>
-  <div id="home">
-    <a href="/">
-      <svg height="20px" width="24px" style="margin-bottom:-2px;" version="1.1" viewBox="0 0 512 512" x="0px" y="0px"
-        xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-        <g>
-          <path d="M512,296l-96-96V56h-64v80l-96-96L0,296v16h64v160h160v-96h64v96h160V312h64V296z"></path>
-        </g>
-      </svg>
-    </a>
-  </div>
+  <main>
+    <div id="home">
+      <a href="/">
+        <svg height="20px" width="24px" style="margin-bottom:-2px;" version="1.1" viewBox="0 0 512 512" x="0px" y="0px"
+          xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <g>
+            <path d="M512,296l-96-96V56h-64v80l-96-96L0,296v16h64v160h160v-96h64v96h160V312h64V296z"></path>
+          </g>
+        </svg>
+      </a>
+    </div>
 
-  {{ content }}
+    {{ content }}
+
+  </main>
 
   {% include piwik.html %}
 </body>

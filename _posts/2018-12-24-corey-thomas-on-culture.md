@@ -15,7 +15,7 @@ Corey likens culture to a band playing together. Each person must be excellent a
 
 There's no such thing as the one right culture. There are only tradeoffs. Whatever culture you have, it will naturally emphasize some universally valuable qualities at the expense of others that are equally valuable, but not to you or not right now. If your culture values predictability and preparedness, it will do better in a static environment where planning ahead is particularly useful. In a situation where things change constantly and planning is less effective, it will struggle.
 
-The important thing is to understand your culture, and what inherent upsides and downsides it has. A stong culture will always have negatives, and if you see them clearly you can accept them and manage to them.
+The important thing is to understand your culture, and what inherent upsides and downsides it has. A strong culture will always have negatives, and if you see them clearly you can accept them and manage to them.
 
 ## Your Culture
 
