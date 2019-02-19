@@ -1,4 +1,5 @@
 ---
+title: Free Dynamic DNS
 ---
 
 ## The Problem
