@@ -2,19 +2,21 @@
 
 @font-face {
   font-family: "Museo Sans";
-  src: url("/font/museo-sans/museosans-500-webfont.eot");
-  src: url("/font/museo-sans/museosans-500-webfont.eot?#iefix") format("embedded-opentype"),
-    url("/font/museo-sans/museosans-500-webfont.woff") format("woff"),
-    url("/font/museo-sans/museosans-500-webfont.ttf") format("truetype"),
-    url("/font/museo-sans/museosans-500-webfont.svg#svgFontName") format("svg");
+  src: url("/font/museo-sans/museosans-300-webfont.eot");
+  src: url("/font/museo-sans/museosans-300-webfont.eot?#iefix") format("embedded-opentype"),
+    url("/font/museo-sans/museosans-300-webfont.woff") format("woff"),
+    url("/font/museo-sans/museosans-300-webfont.ttf") format("truetype"),
+    url("/font/museo-sans/museosans-300-webfont.svg#svgFontName") format("svg");
+  font-weight: 300;
 }
 @font-face {
   font-family: "Museo Sans";
-  src: url("/font/museo-sans/museosans-500italic-webfont.eot");
-  src: url("/font/museo-sans/museosans-500italic-webfont.eot?#iefix") format("embedded-opentype"),
-    url("/font/museo-sans/museosans-500italic-webfont.woff") format("woff"),
-    url("/font/museo-sans/museosans-500italic-webfont.ttf") format("truetype"),
-    url("/font/museo-sans/museosans-500italic-webfont.svg#svgFontName") format("svg");
+  src: url("/font/museo-sans/museosans-300italic-webfont.eot");
+  src: url("/font/museo-sans/museosans-300italic-webfont.eot?#iefix") format("embedded-opentype"),
+    url("/font/museo-sans/museosans-300italic-webfont.woff") format("woff"),
+    url("/font/museo-sans/museosans-300italic-webfont.ttf") format("truetype"),
+    url("/font/museo-sans/museosans-300italic-webfont.svg#svgFontName") format("svg");
+  font-weight: 300;
   font-style: italic;
 }
 @font-face {
@@ -52,10 +54,15 @@ body {
   margin: 1rem auto 5rem;
   //font-family: "Sorts Mill Goudy", serif;
   font-family: "Museo Sans", sans-serif;
+  font-weight: 300;
   font-size: 18px;
   color: #333;
   background: #fff;
   line-height: 1.6;
+}
+
+strong {
+  font-weight: 700;
 }
 
 #home {
