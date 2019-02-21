@@ -37,9 +37,10 @@ If he's right, acknowledging this will help us make active decisions about the t
 
 When I asked Corey how he created this model of culture for himself, he said his approach is to look for consistency and "contradictions that matter". Cultures generally have multiple competing foci. That's ok if the tension created there is beneficial. For example, American culture emphasizes liberty and equality. You can't actually have both, but this contradiction creates a very useful conflict that has lead to a lot of progress. That said, it is generally very hard to pursue multiple goals that are opposed, so Corey suggests only doing it if "the payoff would be astronomical".
 
+Update: HBR published [an article](https://hbr.org/2019/01/the-hard-truth-about-innovative-cultures) echoing the importance of understanding and managing contradictions in innovative cultures.
+
 ## References
 
 [HBR: The Culture Factor](https://hbr.org/2018/01/the-culture-factor) (here's a [summary](http://www.strategicresults.com/new/wp-content/uploads/2016/01/Strategic-Results-The-Culture-Factor.pdf))
 
 [more from Corey](https://medium.com/pillar-companies/recap-of-ceo-workshop-hiring-your-senior-team-with-corey-thomas-f47581b2c711#aca1)
-
