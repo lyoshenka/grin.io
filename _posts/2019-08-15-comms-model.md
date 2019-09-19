@@ -2,6 +2,8 @@
 title: A Better Model Of Communication
 ---
 
+_Status: work in progress_
+
 The goal of communication is to change the recipient's internal state. That could mean giving them information, motivating them to do
 something, triggering their emotions, etc.
 
