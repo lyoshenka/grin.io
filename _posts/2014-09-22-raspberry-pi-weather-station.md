@@ -24,6 +24,8 @@ I had never soldered anything else in my life, so I was quite scared to not mess
 
 Once the soldering was done, the rest was easy. I connected everything as shown below. The connector in this diagram is for an older version of the Pi, but the idea is the same.
 
+**Update 2020-01-02:** The DHT sensor has an operating range of 3V to 6V. If you can't get a reading, try powering it from the 5V pin.
+
 ![](/img/raspi-dht22-wiring.gif)
 
 Then I followed the instructions [here](https://learn.adafruit.com/dht-humidity-sensing-on-raspberry-pi-with-gdocs-logging/software-install-updated) to install the Python library and the sample code. Here's the short version:
