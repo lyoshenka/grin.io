@@ -140,6 +140,7 @@ svg {
 
   a {
     flex: 1;
+    text-align: center;
 
     &:active,
     &:hover {
@@ -148,7 +149,7 @@ svg {
   }
 
   svg {
-    height: 2.4rem;
-    width: 2.4rem;
+    height: 2.75rem;
+    width: 2.75rem;
   }
 }
