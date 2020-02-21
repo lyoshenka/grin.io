@@ -34,11 +34,7 @@ svg {
   fill: currentColor;
 }
 
-*,
-*:before,
-*:after {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
+*, *:before, *:after {
   box-sizing: border-box;
 }
 
