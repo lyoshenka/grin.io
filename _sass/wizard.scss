@@ -161,3 +161,43 @@ ul {
 .posts {
   padding-left: 1.5rem;
 }
+
+
+
+// Flashy links
+// https://codepen.io/giuliamalaroda/pen/QBOGdG
+/*
+a {
+   text-decoration: none;
+   line-height: 1; //19px;
+   position: relative;
+   z-index: 0;
+   display: inline-block;
+   padding: 5px 5px;
+   overflow: hidden;
+   color: $link;
+   vertical-align: bottom;
+   transition: color .3s ease-out;
+}
+a::before {
+   content: "";
+   position: absolute;
+   z-index: -1;
+   top: 0;
+   left: 0;
+   transform: translateY(calc(100% - 2px));
+   width: 100%;
+   height: 100%;
+   //background-image: linear-gradient(60deg, #64b3f4 0%, #c2e59c 100%);
+   background-image: linear-gradient(60deg, lighten($blue,30%) 0%, #c2e59c 100%);
+   transition: transform .2s ease-out;
+}
+a:hover {
+   color: #fff;
+}
+a:hover::before {
+   transform: translateY(0);
+   transition: transform .2s ease-out;
+}
+.social a { padding-bottom: 5px }
+*/
