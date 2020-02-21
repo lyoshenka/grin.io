@@ -88,14 +88,14 @@ h1,
 
 a {
   color: $blue2;
-  text-decoration: none;
+  //text-decoration: none;
 
   &:hover,
   &:focus {
     color: $active-link;
-    text-decoration: underline;
+    //text-decoration: underline;
     text-decoration-color: $active-link;
-    text-decoration-skip: ink;
+    text-decoration-skip: skip;
     text-decoration-skip-ink: auto;
   }
 }
