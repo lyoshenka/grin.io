@@ -1,5 +1,5 @@
 ---
-title: Working From Home
+redirect_from: /wfh
 ---
 
 The last few months have turned just about everyone into a work-from-homer. For many, it's new, exciting, and probably somewhat stressful. For me, it's been my life for over a decade. Ever since I left my job as a Navy scientist to live in startup land, I've been dealing with the ups and downs of working at home. 

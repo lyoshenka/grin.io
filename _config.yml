@@ -19,10 +19,10 @@ safe: true
 
 permalink: /:title
 
-#plugins:
-#  - jekyll-redirect-from
-#whitelist:
-#  - jekyll-redirect-from
+plugins:
+  - jekyll-redirect-from
+whitelist:
+  - jekyll-redirect-from
 
 collections:
   pages:
