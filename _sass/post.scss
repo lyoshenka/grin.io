@@ -50,7 +50,7 @@ body {
   margin: 1rem auto 5rem;
   //font-family: "Sorts Mill Goudy", serif;
   font-family: "Museo Sans", sans-serif;
-  font-size: 18px;
+  font-size: 20px;
   color: #333;
   background: #fff;
   line-height: 1.6;
@@ -61,29 +61,17 @@ body {
   margin-bottom: 3rem;
 }
 
-main {
-  padding: 1rem;
-}
-
-
-h1 {
-  margin-bottom: 1rem;
-}
-h1,
-.date {
+h1, .date {
   text-align: center;
 }
+
 .date {
   margin-bottom: 3rem;
   font-style: italic;
 }
 
-.back {
-  font-size: 1rem;
-}
-
 a {
-  color: $blue2;
+  color: $blue3;
   //text-decoration: none;
 
   &:hover,
@@ -96,13 +84,39 @@ a {
   }
 }
 
+.all-posts {
+  list-style: none;
+  li {
+    margin-bottom: 0.3rem;
+  }
+}
+
+.back {
+  font-size: 1rem;
+}
+
+p, img, blockquote, h2, h3, ul, ol, table {
+  margin-bottom: 1.5rem;
+}
+
+pre, code {
+  color: $code;
+  font-size: 1rem;
+}
+
+/*
+
+main {
+  padding: 1rem;
+}
+
+h1 {
+  margin-bottom: 1rem;
+}
+
 img {
   max-width: 100%;
   height: auto;
-}
-
-.end {
-  text-align: center;
 }
 
 p {
@@ -133,21 +147,15 @@ blockquote {
   margin-left: 0;
 }
 
-.all-posts {
-  list-style: none;
-  li {
-    margin-bottom: 0.3rem;
-  }
-}
-
 code {
   // font-family: "Source Code Pro", monospace;
   font-family: monospace;
   font-size: 0.9rem;
-  color: $code;
 }
 
 pre {
   display: block;
   overflow: auto;
 }
+
+*/

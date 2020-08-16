@@ -1,15 +1,16 @@
 ---
 ---
 
-
 Simplicity is my most important software design principle. But "keep it simple" is easier said than done. In fact it’s said all the time, so we must not be doing it enough.
 
 
-## **What Is Simple?**
+## What Is Simple?
 
 Rich Hickey gave the [definitive talk](https://github.com/matthiasn/talk-transcripts/blob/master/Hickey_Rich/SimpleMadeEasy.md) on the words *simple* and *complex*. Complex means "intertwined" or "braided together", like threads tangled into a ball. Simple is the opposite - those threads laid neatly alongside each other.
 
-**Complexity is the enemy because it prevents us from understanding what our program does.** Hickey says:
+**Complexity is the enemy because it prevents us from understanding what our program does.** 
+
+Hickey says:
 
 > Every time I pull out a new part of the software that I need to comprehend, and it's attached to another thing, I have to pull that other thing into my mind because I can't think about the one without the other.
 > 
@@ -20,7 +21,7 @@ Rich Hickey gave the [definitive talk](https://github.com/matthiasn/talk-transcr
 [We can pay attention to only a handful of things at once](https://en.wikipedia.org/wiki/Chunking_(psychology)#Channel_capacity,%22Magic_number_seven,%22_Increase_of_short-term_memory). Too many interconnections between components, and we literally cannot follow what our system is doing.
 
 
-## **Why Simplify?**
+## Why Simplify?
 
 In 2017, I shared [a few programming aphorisms](https://grin.io/coding-maxims) with my company. Looking back, half of them are variations on Hickey's vision of simplicity:
 
@@ -55,7 +56,7 @@ You pay the price of complex code every time you come back to read it. Be mindfu
 This one's about the danger of premature optimization. Optimization adds complexity and you don't want to add it before you need it.
 
 
-## **Learning To Keep It Simple**
+## Learning To Keep It Simple
 
 Rich Hickey's talk is the first step to grokking *simple*. Read or listen to it and take notes.
 
