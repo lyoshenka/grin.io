@@ -31,7 +31,7 @@ Instead, I recommend a mirror of the "go to work" routine - a "leave work" routi
 ![my end-of-day note](/img/eod-note.jpg)
 *I like to use Post-Its. They keep me brief and focused.*
 
-Now leave the house and walk counter-clockwise back to work. Once you're "home", forbid yourself from doing even a little bit of work. Stay off Slack, hide your work email, and relax. 
+Now leave the house and walk counter-clockwise back home. Once you're back, forbid yourself from doing even a little bit of work. Stay off Slack, hide your work email, and relax. 
 
 
 ## Stage 3: The Middle Path
