@@ -1,5 +1,7 @@
 source "https://rubygems.org"
 
+ruby '2.7.2' # i think anything less than 3.0 will work
+
 gem "jekyll"
 
 # If you want to use GitHub Pages, remove the "gem "jekyll"" above and

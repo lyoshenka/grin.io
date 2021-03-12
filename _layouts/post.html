@@ -11,3 +11,7 @@ layout: base
 <article>
   {{ content }}
 </article>
+
+<div class="comment-link">
+  <a href="mailto:a+{{ page.slug }}@grin.io?subject=re+%22{{ page.title | url_encode }}%22">Have a comment? Email me!</a>
+</div>
