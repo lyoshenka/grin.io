@@ -1,7 +1,7 @@
 ---
 ---
 
-_numbered for ease of reference, not for ranking_
+_numbered for ease of reference, not for priority_
 
 1. code is debt (and bad code is an [unhedged call option](https://www.castsoftware.com/blog/bad-code-isnt-technical-debt-its-an-unhedged-call-option))
   - ![cant have 0-days or bugs if I dont write any code](/img/no-bugs.jpg)
@@ -31,8 +31,14 @@ _numbered for ease of reference, not for ranking_
 
 11. remember the [80/20 rule](https://en.wikipedia.org/wiki/Pareto_principle), and the [90/90 rule](https://en.wikipedia.org/wiki/Ninety-ninety_rule)
 
-12. first you don't know the rules, then you learn the rules, then you break the rules
+12. design [layers of abstraction](https://en.wikipedia.org/wiki/Abstraction_layer) with [deep modules](https://web.stanford.edu/~ouster/cgi-bin/cs190-winter18/lecture.php?topic=modularDesign)
 
-See also: [1](https://en.wikipedia.org/wiki/Category:Programming_principles), [2](https://github.com/dwmkerr/hacker-laws)
+13. [write tests. not too many. mostly integration.](https://kentcdodds.com/blog/write-tests)
+
+14. comments should describe [what's not obvious](https://web.stanford.edu/~ouster/cgi-bin/cs190-winter18/lecture.php?topic=comments) ([this book](https://www.goodreads.com/en/book/show/39996759-a-philosophy-of-software-design) changed my mind about comments)
+
+15. first you don't know the rules, then you learn the rules, then you break the rules
+
+See also: [programming principles](https://en.wikipedia.org/wiki/Category:Programming_principles), [hacker laws](https://github.com/dwmkerr/hacker-laws)
 
 *Originally posted [here](https://gist.github.com/lyoshenka/0a43205aa9a072b196ff87e2c689a8b9)*
