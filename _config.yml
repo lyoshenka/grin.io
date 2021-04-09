@@ -42,3 +42,4 @@ defaults:
       type: "posts"
     values:
       layout: "post"
+      priority: 99999

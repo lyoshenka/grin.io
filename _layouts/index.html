@@ -19,7 +19,7 @@
         <h2>Web Wizard</h2>
 
         <p>
-          I'm building <a href="https://lbry.com">LBRY</a>, a protocol to publish and access digital 
+          I'm building <a href="https://lbry.com">LBRY</a>, a protocol to publish and access digital
           content that puts you in control.<br>
           Take it for a spin: <a href="https://odysee.com">Odysee.com</a>.
         </p>
@@ -34,26 +34,20 @@
         </p>
 
         <div>
-          Recent Writing
+          Selected Writing
           <div class="posts">
-            {% assign posts = site.posts | sort: 'date' | reverse | slice: 0, 3 %}
+            {% assign postGroups = site.posts | group_by: 'priority' | sort: 'name' %}
             <ul>
-              {% for post in posts %}
-              <li><a href="{{ post.url }}">{{ post.title}}</a></li>
+              {% for g in postGroups %}
+                {% assign posts = g.items | sort: 'date' | reverse | slice: 0, 3 %}
+                {% for post in posts %}
+                  <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+                {% endfor %}
               {% endfor %}
             </ul>
             or see <a href="/posts">all posts</a>.
           </div>
         </div>
-
-        <!-- <p>
-          I'm also on
-          <a href="https://github.com/lyoshenka" rel=me>Github</a>,
-          <a href="https://www.goodreads.com/user/show/7456812-grin">Goodreads</a>,
-          <a href="http://last.fm/user/lyoshenka">Last.fm</a>,
-          and <a href="http://stackoverflow.com/users/182709/lyoshenka?tab=profile">StackOverflow</a>.
-          Email me at <a id="e" href="mailto:">my email. It's my first initial, then the symbol, then this domain</a>.
-        </p> -->
 
         <p class="social">
 
