@@ -5,7 +5,7 @@ author:
 production_url: https://grin.io
 timezone: "America/New_York"
 twitter:
-  username: lyoshenka
+  username: grin_io
 
 include:
   - .well-known
