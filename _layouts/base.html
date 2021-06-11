@@ -32,12 +32,15 @@
     {{ content }}
 
   </main>
+
+  {% if page.show_subscribe %}
   <footer>
     <div class="lined thick">
       Subscribe to my newsletter for occasional updates
       <iframe sandbox="allow-same-origin allow-scripts allow-forms" src="https://grin.substack.com/embed" frameborder="0" scrolling="no"></iframe>
     </div>
   </footer>
+  {% endif %}
 
   {% include piwik.html %}
 </body>

@@ -38,6 +38,7 @@ defaults:
       type: "pages"
     values:
       layout: "page"
+      show_subscribe: true
   - scope:
       type: "posts"
     values:
