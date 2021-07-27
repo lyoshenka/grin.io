@@ -6,6 +6,7 @@ production_url: https://grin.io
 timezone: "America/New_York"
 twitter:
   username: grin_io
+  card: summary
 
 include:
   - .well-known
@@ -44,3 +45,8 @@ defaults:
     values:
       layout: "post"
       priority: 99999
+  # for seo
+  - scope:
+      path: ""
+    values:
+      image: /img/wizard-hat-social.png

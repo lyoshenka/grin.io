@@ -1,6 +1,8 @@
 ---
 title: Let's Connect 👋
 show_subscribe: false
+favicon: calendar
+image: /img/cal.png
 ---
 
 Hi future friend. You've found my secret video call scheduler. Pick a time below that works for you.
