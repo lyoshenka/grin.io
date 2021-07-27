@@ -10,6 +10,8 @@ gem "addressable", ">= 2.8.0"
 gem "nokogiri", ">= 1.11.4"
 gem "rexml", ">= 3.2.5"
 gem "kramdown", ">= 2.3.1"
+gem "rack", ">= 2.1.4"
+
 
 
 # If you want to use GitHub Pages, remove the "gem "jekyll"" above and
@@ -20,7 +22,7 @@ group :jekyll_plugins do
   gem 'jekyll-redirect-from'
   gem 'jemoji'
   gem 'jekyll-compose'
-  gem 'jekyll-admin'
+  #gem 'jekyll-admin' # seems unmaintained and has rack security vuln
   gem 'jekyll-seo-tag'
   #gem "jekyll-feed", "~> 0.6"
 end
