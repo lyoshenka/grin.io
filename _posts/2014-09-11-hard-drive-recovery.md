@@ -5,16 +5,16 @@ My first foray into data recovery ended up being a big success. My GF's sister-i
 
 ## First, Save the Data
 
-When you're trying to recover a drive with hardware issues, or if you're not sure what the exact issue is, the first thing you have to do is get as much data off the drive as you can. You never know if the drive is destroying more data as you use it, or when it will start to fail worse or die completely. Fortunately there's a great program called [ddrescue](http://www.forensicswiki.org/wiki/Ddrescue) that will image the drive for you in the safest way it can. It keeps a log of all the sectors it reads, so it won't reread unneccesary data if you stop and restart it. For an in-depth but still simple explanation of how it works, check out [the manual](https://www.gnu.org/software/ddrescue/manual/ddrescue_manual.html). If you wanna get straight to it, then find a harddrive with enough room, install ddrescue, and do the following:
+When you're trying to recover a drive with hardware issues, or if you're not sure what the exact issue is, the first thing you have to do is get as much data off the drive as you can. You never know if the drive is destroying more data as you use it, or when it will start to fail worse or die completely. Fortunately there's a great program called [ddrescue](http://www.forensicswiki.org/wiki/Ddrescue) that will image the drive for you in the safest way it can. It keeps a log of all the sectors it reads, so it won't reread unneccesary data if you stop and restart it. For an in-depth but still simple explanation of how it works, check out [the manual](https://www.gnu.org/software/ddrescue/manual/ddrescue_manual.html) ([a](/archive/www.gnu.org~software~ddrescue~manual~ddrescue_manual.html)). If you wanna get straight to it, then find a harddrive with enough room, install ddrescue, and do the following:
 
 	cd /path/to/large/hard/drive/recovery/dir
-    
+
 	# first pass - copy as much good data as possible without worrying about errors
 	sudo ddrescue --no-split --verbose /dev/failed-drive drive-image.bin ddrescue.log
-    
+
     # second pass - go back over errors and get as much as you can
     sudo ddrescue --direct --max-retries=3 -verbose /dev/failed-drive drive-image.bin ddrescue.log
-    
+
     # optional third pass - if you don't have all the data by now, you can try re-trimming
     sudo ddrescue --retrim --direct --max-retries=3 -verbose /dev/failed-drive drive-image.bin ddrescue.log
 
@@ -27,7 +27,7 @@ Hopefully at this point, you have a complete image of your failing drive. If you
 
 Note the start and end sectors of the partition you want to mount, and the partition size. You'll have to do a little math to convert from sectors to bytes. To get the start, multiply the start sector by the sector size (usually 512 bytes). To get the end, subtract the start sector from the end sector and multiply that by the sector size. Here's an example:
 
-	$ gdisk -l drive-image.bin 
+	$ gdisk -l drive-image.bin
     GPT fdisk (gdisk) version 0.8.1
 
     Partition table scan:
@@ -48,12 +48,12 @@ Note the start and end sectors of the partition you want to mount, and the parti
     Number  Start (sector)    End (sector)  Size       Code  Name
        1              40          409639   200.0 MiB   EF00  EFI System Partition
        2          409640       488134983   232.6 GiB   AF00  Customer
-	
+
     $ bc
     bc 1.06.95
     Copyright 1991-1994, 1997, 1998, 2000, 2004, 2006 Free Software Foundation, Inc.
     This is free software with ABSOLUTELY NO WARRANTY.
-    For details type `warranty'. 
+    For details type `warranty'.
     409640*512
     209735680               <- **THIS IS THE FIRST BYTE OF THE SECOND PARTITION**
     (488134983-409640)*512
@@ -72,7 +72,7 @@ If the filesystem is broken, you can try using `fsck` to repair it. For more ext
 If you can't get the image to mount, fear not. You can still try to recover the files from the raw image. There are a handful of tools that can help you do that (e.g. foremost, scalpel, magic rescue, photorec, sleuthkit/autopsy). I used Photorec because it came with TestDisk, and it worked like a charm.
 
 	photorec -d /path/to/put/recovered/files drive-image.bin
-    
+
 PhotoRec has several options, and lets you choose what types of files to recover. I just ran it for all the files to see what it will pull up. In my case, `ddrescue` copied all but 5MB of a 180GB partition, so even though I couldn't mount the image, I got a ton of files from the drive. Many of them were system files that I didn't care about, but I also got all my important docs and my music collection. Hooray!
 
 ## Other Resources
