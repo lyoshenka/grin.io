@@ -4,6 +4,7 @@ author:
   email: a@grin.io
 production_url: https://grin.io
 timezone: "America/New_York"
+logo: /img/wizard-hat-social.png
 twitter:
   username: grin_io
   card: summary
