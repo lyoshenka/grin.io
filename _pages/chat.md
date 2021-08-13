@@ -1,6 +1,5 @@
 ---
 title: Let's Connect 👋
-show_subscribe: false
 favicon: calendar
 image: /img/cal.png
 ---

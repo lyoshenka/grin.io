@@ -40,12 +40,12 @@ defaults:
       type: "pages"
     values:
       layout: "page"
-      show_subscribe: true
   - scope:
       type: "posts"
     values:
       layout: "post"
       priority: 99999
+      show_subscribe: true
   # for seo
   - scope:
       path: ""
