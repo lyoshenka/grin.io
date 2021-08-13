@@ -8,8 +8,8 @@ I recently bought a Raspberry Pi to play around with, and also started brewing b
 Ingredients:
 
 - [Raspberry Pi B+](http://www.raspberrypi.org/products/model-b-plus/)
-- [DHT22](http://www.adafruit.com/products/385) temperature/humidity sensor
-- [GPIO Breakout Connector](https://www.adafruit.com/products/1990) to connect the breadboard to the Pi
+- [DHT22](http://www.adafruit.com/products/385) ([a](/archive/www.adafruit.com~product~385.html)) temperature/humidity sensor
+- [GPIO Breakout Connector](https://www.adafruit.com/products/1990) ([a](/archive/www.adafruit.com~product~1990.html)) to connect the breadboard to the Pi
 - Solderless breadboard
 - Several male-male wires
 - Soldering iron + solder

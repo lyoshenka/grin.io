@@ -1,0 +1,198 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> <html xmlns=http://www.w3.org/1999/xhtml xml:lang=en lang=en style><!--
+ Page saved with SingleFile 
+ url: https://web.stanford.edu/~ouster/cgi-bin/cs190-winter18/lecture.php?topic=comments 
+ saved date: Fri Aug 13 2021 08:24:39 GMT-0400 (Eastern Daylight Time)
+--><meta charset=utf-8>
+<title>Writing Comments</title>
+<style>body{background:#f0f0f0;margin:0;padding:0;font-size:14px;color:#000000;font-family:Verdana,sans-serif,arial,helvetica;line-height:1.4}#shell{background:#ffffff;position:relative;max-width:900px;min-width:600px;padding:0;margin:2px;border:1px solid #808080}h1{font-family:Georgia,Verdana,sans-serif;font-size:24px;color:#722b00;margin:10px 0 10px 0}h2{font-family:Georgia,Verdana,sans-serif;font-size:20px;font-weight:bold;color:#722b00;margin:10px 0px 0px 0px}a{color:#a5001d}a:hover{color:#e90b3c}a:focus{outline:none}p,ul{margin:6px 0 6px 0}.code pre{font-family:Courier New,monospace;font-size:115%;margin:5px 0px 5px 0px;padding:2px 10px 2px 10px;display:inline-block;background-color:#f7efe1;border:1px dashed #722b00;line-height:1.1}#header{background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAABuCAYAAAAeV4LxAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAABGdBTUEAALGOfPtRkwAAACBjSFJNAAB6JQAAgIMAAPn/AACA6QAAdTAAAOpgAAA6mAAAF2+SX8VGAAAAWUlEQVR42uyWwQ0AIAgDq2EOt3dOXIGHBgvlfcFwocSxsRyBmghWGDQv1NEAbzh16tP++9QMehi25wF4Pa61wK56lJkmF7dUFCiE53nUj1QeBQoUKJALPAMAcVVD1xy7mCsAAAAASUVORK5CYII=);background-repeat:repeat-x;padding:5px 5px 0 5px}#header h1{font-size:28px;color:#ffffff;margin:5px 0px 20px 0px}#header a{color:#ffffff;text-decoration:none}#header a:hover{color:#f7efe1}#navigation table{color:#ffffff;padding:0;width:100%}#navigation td{border-bottom:1px solid #6a0013;padding:4px 12px 3px 12px;margin:0;white-space:nowrap}#navigation td.selected{font-weight:bold;background:#ffffff;border-right:2px solid #6a0013;border-left:1px solid #6a0013;border-top:1px solid #6a0013;border-bottom:1px solid #ffffff;padding-top:2px}#navigation td.filler{width:100%}#navigation a{color:#ffffff;text-decoration:none}#navigation a:hover{color:#e7c8ce}#navigation td.selected a{color:#6e0014}#navigation td.selected a:hover{color:#d00026}#body{padding-left:5px;padding-right:5px}#footer{margin:0.25in 0.5in 0.3in 0.5in;border-top:2px solid #a5001d;padding-top:0.2in;text-align:center}#footer{font-style:italic;color:#a5001d}#footer a{font-style:italic;text-decoration:none}#lectureNotes{background:#ffffff}#lectureNotes p.heading{font-weight:bold;margin-bottom:0}#lectureNotes div.spacer{padding-top:12px}#lectureNotes ul{margin-top:0px;margin-bottom:0px}#lectureNotes li{margin-top:4px}</style>
+<link type=image/x-icon rel="shortcut icon" href=data:image/vnd.microsoft.icon;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAFlElEQVRYw72Xe0xTVxzHv7cP+oDyqFyKFWlkSsKz8owgBRXDiDrnIgESZoTInPERM61SwUhMDSiruMVFF0WjBpVUzeK2LsqSiRMEg4RZ1olhMYpQLJcij1Kg0N79QdZRKVCE7CT94/7O957z6bm/83sQmGWoSBJuAsHXoZmZciabDVeGbXwcOrX6G8vAwFdyippRS8yyOYPr7X02qbBwd/Plyxg2Gl0C4AmFiMrPR21Jyfcj797tkVOUbTotc6bN+b6+l5IKC79oOH0a/a9eYcxsdvgJV6yAzWKB6e1bB/uw0QiDVoskhSL2bXOzZC2gqTabbS4DqEiS5e7vX7m6oODzupMnMdTd7RQybu9eiKRSvH74cMrc2NAQupqakHTkyMpurTZ4DU3fdQbBcErF4RSvViiyHymVMPf0ON3ce9kyfJSWBjI8fNpPMWw04pFSicSCgmwWj3fcmcYpAJvH8x3s6MBIX9+0i5NhYWByOJAkJ0MklU6rG+nrQ//r13Dz8BC6DODK8JJIIBCLAYJARE7Ohy7zYQDLUlMRKJOBpmkQBIFBvR5MN7f/D6CzsRHdLS3254CEBERs2/ZBAKy5vrB840asLyuDO0nabX4REehqagKfJEHbpt42Np+/MADuIhHEMTFoPHsW4vh4BG/aZJ9bdeAA4vbtQ0N5uc1qsTg6Yn8/LEND8wcYMhjwu1IJ6fbtWJ6ebrdTOh3u7d//y+Lo6Je9bW31xhcv1M4i9LwBGGw2tlZVIVAmc7BLUlKw4dy59Kfnz9dyvLxCxfHxO0xdXb0Db958Kaeo3gVzwkCZDGR4OPSNjTBotXY7TdNYmpjI2HLtWvLimJh13hLJurg9ezJEkZH3VSQpXDAAk16PipgY6Kqq4BMUZLe/rK7GjQ0boL16FYZnz/DXrVv4ragIoZmZsaLIyPsqX1/hnABowOm97mltBd/PD2Aw8OzKFbs9KC0NsqIiNF+6hI7HjyfWsFpRU1yM0KysWJFUOu1JOAUY7eu7Pz4yMv7+twaAwc5O8Hx8EL1zp93WptHgcVkZrKOjjn/EakXNsWOQ5uXFunl4FLucDavN5tZQrfZFSEbGZwwWi9Hf3j5RPDCZ+OTiRYRlZ4PF5dr1i4KD4Rcejo76egzq9e8dJw3fkBD0PH/erKEojcs+IKcodUN5eY44Ls5+ErTViru5ufjBSdRjcbnYqlbD3c9v4SKhnKLUqvJyROXnXw+UyVgcT08EpaXBw99/ivbve/fw582bCx+K5RSlVlVU/AHAU5KScsrQ0pIMgPXxmTMOuqVJSQjLysLtzMxpCxiXAVQkmQ4g+n17d0tLb1R+PkuSkjI1QdXX4+eKCowODMz/BDienp9uvHBhV/ekYAMAbgIBAmUyBwf8d8Tu3g1pbi4uREXNH4BgMND19CnqVar/hDwettfUgM3ng7bZ0HL9+oQ/iEQO185/5Uq8evBg4euBoPXr0d/ejhvp6fhWIsGvBw9ifGQEZqMRbRoNKJ0ONE1jS2XlRKW00PVAR0MD2jSaKfl+2GjEj3l5E3nfwwNJCgUCEhPx/PbthQUwO+lwCMKxrxkzmfDg6NH5l2RjZnO3YMkS8BYtmqGnIsD18QGDyZxxA65QCC+JBBaTqdtlAOvoqLK2pORKUmEh3Cc52eSRIJeDIxBAEBAArre3Uw2fJCErKkJdaWnl+PCwci65wLYW+Enf2CharVDEUjodLIOD9vnwnBysOX4cBEGAwWJBHBeHjro6jPb32zUeYjESDh1CXWlphbmnZ4ecoqxz6g2rzWZ6HUFoOp888U44fHjVkMEABpuNoNRUpJ46BdakdO0ZEIDgzZth6uqCZXAQXoGBiNm1C7UnTnw3W3NKuNKes93dS0MyMuRMlms+ax0fR+udO+UWk6lgtvb8H1oILgG8hlOLAAAAAElFTkSuQmCC><link rel=canonical href="https://web.stanford.edu/~ouster/cgi-bin/cs190-winter18/lecture.php?topic=comments"><meta http-equiv=content-security-policy content="default-src 'none'; font-src 'self' data:; img-src 'self' data:; style-src 'unsafe-inline'; media-src 'self' data:; script-src 'unsafe-inline' data:;"></head>
+ <body id=lectureSmall class=vsc-initialized>
+ <div id=shell>
+ <div id=header>
+ <h1><a href=https://web.stanford.edu/~ouster/cgi-bin/cs190-winter18/index.php>CS 190: Software Design Studio (Winter 2018)</a></h1>
+ <div id=navigation>
+ <table cellspacing=0>
+ <tbody><tr>
+ <td class=leftSpacer></td>
+ <td><a href=https://web.stanford.edu/~ouster/cgi-bin/cs190-winter18/index.php>Home</a></td>
+ <td><a href=https://web.stanford.edu/~ouster/cgi-bin/cs190-winter18/info.php>Class Info</a></td>
+ <td class=selected><a href=https://web.stanford.edu/~ouster/cgi-bin/cs190-winter18/lectures.php>Classes</a></td>
+ <td><a href=https://web.stanford.edu/~ouster/cgi-bin/cs190-winter18/projects.php>Projects</a></td>
+ <td class=filler></td>
+ </tr>
+ </table>
+ </div>
+ </div>
+ <div id=body>
+<div id=lectureNotes>
+ <h1>Writing Comments</h1>
+<p class=heading>
+ Lecture Notes for CS 190<br>
+ Winter 2018<br>
+ John Ousterhout
+</p>
+<div class=spacer></div>
+<ul><li>Reading: Chapters 10, 11, 13 of book
+<div class=spacer></div>
+<li>Comments are still controversial (!)
+ <ul><li>A significant fraction of all commercial code (50%?) is uncommented
+ <li>Excuses:
+ <ul><li>"This code is self-documenting"
+ <li>"I don't have time to write comments"
+ <li>"Comments get out of date and become misleading"
+ <li>"The comments I have seen are worthless; why bother?"
+ </ul>
+ </ul>
+<div class=spacer></div>
+<li>Why are comments needed?
+ <ul><li>Code alone can't represent cleanly all the information in the mind
+ of the designer
+ <li>Even if information could be deduced from code, it might
+ be time-consuming:
+ </ul>
+<div class=spacer></div>
+<li><b>Comments should describe things that are not obvious from the code</b>.
+<li>Mistake #1: comments duplicate code
+<li>Mistake #2: non-obvious info is not described
+<div class=spacer></div>
+<li>Comments should be at a different level of detail than code
+ <ul><li>Lower level comments provide precision (especially for
+ variables, arguments, return values):
+ <ul><li><i>Exactly</i> what is this thing?
+ <li>What are the units?
+ <li>Boundary conditions
+ <ul><li>Does "end" refer to the last value, or
+ the value after the last one?
+ <li>Is a null value allowed? If so, what does it mean?
+ </ul>
+ <li>If memory is dynamically allocated, who is responsible for
+ freeing it?
+ <li>Invariants?
+ </ul>
+ <li>Higher-level comments capture intuition:
+ <ul><li>Abstractions: a higher-level description of
+ what the code is doing.
+ <li>Rationale for the current design: why the code is this way.
+ <li>How to choose the value of a configuration parameter.
+ </ul>
+ </ul>
+<div class=spacer></div>
+<li>Two kinds of documentation for classes and methods:
+ <ul><li>Interface: what someone needs to know in order to <i>use</i>
+ this class or method
+ <li>Implementation: how the method or class works internally to
+ implement the advertised interface.
+ <li>Important to separate these: do not describe the implementation
+ in the interface documentation!
+ </ul>
+<div class=spacer></div>
+<li>Interface documentation:
+ <ul><li>Put immediately before the class or method declaration
+ <li>Goal: describe the abstraction (create simple, intuitive model for users)
+ <li>Simpler is better
+ <li>Complete: must include <i>everything</i> that any user might need to know
+ <li>Interface description may use totally different terms than the
+ implementation (if they are simpler)
+ </ul>
+<div class=spacer></div>
+<li>Example: index range lookup
+ <ul><li>Large table of objects in a storage system, split across dozens of servers
+ <li>Table has indexes for looking up objects by certain attributes
+ (name, salary, etc.)
+ <li>IndexLookup class retrieves a range of values in index order
+ <div class=code><pre>query = new IndexLookup(table, index, key1, key2);
+while (true) {
+    object = query.getNext();
+    if (object == null) {
+        break;
+    }
+    ...
+}
+</pre></div>
+ </ul>
+<div class=spacer></div>
+<li>Implementation documentation (comments inside methods):
+ <ul><li>For many methods, not needed
+ <li>For longer methods, document major blocks of code
+ <ul><li>Describe what's happening at a higher level
+ <li>E.g., what does each loop iteration do?
+ </ul>
+ </ul>
+ <ul><li>Document tricky aspects, non-obvious reasons for code
+ <li>Document dependencies ("if you change this, you better also...")
+ <li>Documenting variables is less important for method local variables
+ (can see all of the uses), but sometimes needed for longer methods
+ or tricky variables.
+ </ul>
+</ul>
+<div class=spacer></div>
+<ul><li>Challenges with comments:
+ <ul><li>It must be easy for people to find the right documentation
+ at the right time
+ <li>The documentation must get updated as the code changes
+ </ul>
+<li>Techniques:
+ <ul><li>Document each thing exactly once: don't duplicate documentation
+ (it won't get maintained)
+ <ul><li>Use references rather than repeating documentation:
+ "See documentation for xyz method".
+ <li>Don't duplicate interface documentation for overridden methods.
+ </ul>
+ <li>Put documentation as close as possible to the relevant code
+ <ul><li>Next to variable and method declarations
+ <li>Push in-method documentation down to the tightest enclosing
+ context
+ </ul>
+ <li>Don't say anything more in documentation than you need to
+ <ul><li>e.g., don't use comments in one place to describe design decisions
+ elsewhere
+ <li>Higher-level comments are less likely to become obsolete
+ </ul>
+ <li>Look for "obvious" locations where people can easily find
+ documentation (see Status example in slides)
+ </ul>
+</ul>
+<h2>Write Comments Before Code</h2>
+<div class=spacer></div>
+<ul><li>Most people put off writing comments:
+ <ul><li>"Why waste time writing comments when the code is still changing?"
+ <li>"Once I get the code done, I'll write all the comments"
+ </ul>
+<div class=spacer></div>
+<li>Problems with this approach:
+ <ul><li>You probably won't go back and write the comments later
+ <li>If you do, the comments will be bad
+ </ul>
+<div class=spacer></div>
+<li>Instead, write comments <i>at the beginning</i>:
+ <ul><li>I write class comments, method headers (signature and comments)
+ before writing the bodies of methods
+ </ul>
+<li>Use comments as a design tool:
+ <ul><li>Allows you to focus on the abstractions
+ <li>Tune APIs, jungle functionality between methods
+ <li>Comments indicate interface complexity
+ <ul><li>Design APIs for simplest documentation
+ </ul>
+ </ul>
+<li>As you write and test code, can revise the comments to make them
+ better and better
+</ul>
+<div class=spacer></div>
+<ul><li>Suggestions for projects:
+ <ul><li>Interface comment blocks for every method, every class.
+ <li>Document every class instance variable, every method parameter, every
+ result.
+ <li>Add comments inside methods if/when needed
+ <li>Skip comments only if you're sure it will be obvious to
+ readers
+ <li>Follow Javadoc conventions
+ </ul>
+</ul>
+</div>
+ </div>
+ <div id=footer><a href=https://web.stanford.edu/~ouster/cgi-bin/cs190-winter18/index.php>CS 190: Software Design Studio (Winter 2018)</a><br>
+ Stanford University<br>
+ </div>
+ 
+</div>

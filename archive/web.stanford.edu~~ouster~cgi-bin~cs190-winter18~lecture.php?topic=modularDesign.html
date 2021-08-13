@@ -1,0 +1,268 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> <html xmlns=http://www.w3.org/1999/xhtml xml:lang=en lang=en style><!--
+ Page saved with SingleFile 
+ url: https://web.stanford.edu/~ouster/cgi-bin/cs190-winter18/lecture.php?topic=modularDesign 
+ saved date: Fri Aug 13 2021 08:23:10 GMT-0400 (Eastern Daylight Time)
+--><meta charset=utf-8>
+<title>Modular Design</title>
+<style>body{background:#f0f0f0;margin:0;padding:0;font-size:14px;color:#000000;font-family:Verdana,sans-serif,arial,helvetica;line-height:1.4}#shell{background:#ffffff;position:relative;max-width:900px;min-width:600px;padding:0;margin:2px;border:1px solid #808080}h1{font-family:Georgia,Verdana,sans-serif;font-size:24px;color:#722b00;margin:10px 0 10px 0}h2{font-family:Georgia,Verdana,sans-serif;font-size:20px;font-weight:bold;color:#722b00;margin:10px 0px 0px 0px}a{text-decoration:underline;color:#a5001d}a:hover{color:#e90b3c}a:focus{outline:none}p,ul{margin:6px 0 6px 0}.code pre{font-family:Courier New,monospace;font-size:115%;margin:5px 0px 5px 0px;padding:2px 10px 2px 10px;display:inline-block;background-color:#f7efe1;border:1px dashed #722b00;line-height:1.1}#header{background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAABuCAYAAAAeV4LxAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAABGdBTUEAALGOfPtRkwAAACBjSFJNAAB6JQAAgIMAAPn/AACA6QAAdTAAAOpgAAA6mAAAF2+SX8VGAAAAWUlEQVR42uyWwQ0AIAgDq2EOt3dOXIGHBgvlfcFwocSxsRyBmghWGDQv1NEAbzh16tP++9QMehi25wF4Pa61wK56lJkmF7dUFCiE53nUj1QeBQoUKJALPAMAcVVD1xy7mCsAAAAASUVORK5CYII=);background-repeat:repeat-x;padding:5px 5px 0 5px}#header h1{font-size:28px;color:#ffffff;margin:5px 0px 20px 0px}#header a{color:#ffffff;text-decoration:none}#header a:hover{color:#f7efe1}#navigation table{color:#ffffff;padding:0;width:100%}#navigation td{border-bottom:1px solid #6a0013;padding:4px 12px 3px 12px;margin:0;white-space:nowrap}#navigation td.selected{font-weight:bold;background:#ffffff;border-right:2px solid #6a0013;border-left:1px solid #6a0013;border-top:1px solid #6a0013;border-bottom:1px solid #ffffff;padding-top:2px}#navigation td.filler{width:100%}#navigation a{color:#ffffff;text-decoration:none}#navigation a:hover{color:#e7c8ce}#navigation td.selected a{color:#6e0014}#navigation td.selected a:hover{color:#d00026}#body{padding-left:5px;padding-right:5px}#footer{margin:0.25in 0.5in 0.3in 0.5in;border-top:2px solid #a5001d;padding-top:0.2in;text-align:center}#footer{font-style:italic;color:#a5001d}#footer a{font-style:italic;text-decoration:none}#lectureNotes{background:#ffffff}#lectureNotes p.heading{font-weight:bold;margin-bottom:0}#lectureNotes div.spacer{padding-top:12px}#lectureNotes ul{margin-top:0px;margin-bottom:0px}#lectureNotes li{margin-top:4px}</style>
+<link type=image/x-icon rel="shortcut icon" href=data:image/vnd.microsoft.icon;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAFlElEQVRYw72Xe0xTVxzHv7cP+oDyqFyKFWlkSsKz8owgBRXDiDrnIgESZoTInPERM61SwUhMDSiruMVFF0WjBpVUzeK2LsqSiRMEg4RZ1olhMYpQLJcij1Kg0N79QdZRKVCE7CT94/7O957z6bm/83sQmGWoSBJuAsHXoZmZciabDVeGbXwcOrX6G8vAwFdyippRS8yyOYPr7X02qbBwd/Plyxg2Gl0C4AmFiMrPR21Jyfcj797tkVOUbTotc6bN+b6+l5IKC79oOH0a/a9eYcxsdvgJV6yAzWKB6e1bB/uw0QiDVoskhSL2bXOzZC2gqTabbS4DqEiS5e7vX7m6oODzupMnMdTd7RQybu9eiKRSvH74cMrc2NAQupqakHTkyMpurTZ4DU3fdQbBcErF4RSvViiyHymVMPf0ON3ce9kyfJSWBjI8fNpPMWw04pFSicSCgmwWj3fcmcYpAJvH8x3s6MBIX9+0i5NhYWByOJAkJ0MklU6rG+nrQ//r13Dz8BC6DODK8JJIIBCLAYJARE7Ohy7zYQDLUlMRKJOBpmkQBIFBvR5MN7f/D6CzsRHdLS3254CEBERs2/ZBAKy5vrB840asLyuDO0nabX4REehqagKfJEHbpt42Np+/MADuIhHEMTFoPHsW4vh4BG/aZJ9bdeAA4vbtQ0N5uc1qsTg6Yn8/LEND8wcYMhjwu1IJ6fbtWJ6ebrdTOh3u7d//y+Lo6Je9bW31xhcv1M4i9LwBGGw2tlZVIVAmc7BLUlKw4dy59Kfnz9dyvLxCxfHxO0xdXb0Db958Kaeo3gVzwkCZDGR4OPSNjTBotXY7TdNYmpjI2HLtWvLimJh13hLJurg9ezJEkZH3VSQpXDAAk16PipgY6Kqq4BMUZLe/rK7GjQ0boL16FYZnz/DXrVv4ragIoZmZsaLIyPsqX1/hnABowOm97mltBd/PD2Aw8OzKFbs9KC0NsqIiNF+6hI7HjyfWsFpRU1yM0KysWJFUOu1JOAUY7eu7Pz4yMv7+twaAwc5O8Hx8EL1zp93WptHgcVkZrKOjjn/EakXNsWOQ5uXFunl4FLucDavN5tZQrfZFSEbGZwwWi9Hf3j5RPDCZ+OTiRYRlZ4PF5dr1i4KD4Rcejo76egzq9e8dJw3fkBD0PH/erKEojcs+IKcodUN5eY44Ls5+ErTViru5ufjBSdRjcbnYqlbD3c9v4SKhnKLUqvJyROXnXw+UyVgcT08EpaXBw99/ivbve/fw582bCx+K5RSlVlVU/AHAU5KScsrQ0pIMgPXxmTMOuqVJSQjLysLtzMxpCxiXAVQkmQ4g+n17d0tLb1R+PkuSkjI1QdXX4+eKCowODMz/BDienp9uvHBhV/ekYAMAbgIBAmUyBwf8d8Tu3g1pbi4uREXNH4BgMND19CnqVar/hDwettfUgM3ng7bZ0HL9+oQ/iEQO185/5Uq8evBg4euBoPXr0d/ejhvp6fhWIsGvBw9ifGQEZqMRbRoNKJ0ONE1jS2XlRKW00PVAR0MD2jSaKfl+2GjEj3l5E3nfwwNJCgUCEhPx/PbthQUwO+lwCMKxrxkzmfDg6NH5l2RjZnO3YMkS8BYtmqGnIsD18QGDyZxxA65QCC+JBBaTqdtlAOvoqLK2pORKUmEh3Cc52eSRIJeDIxBAEBAArre3Uw2fJCErKkJdaWnl+PCwci65wLYW+Enf2CharVDEUjodLIOD9vnwnBysOX4cBEGAwWJBHBeHjro6jPb32zUeYjESDh1CXWlphbmnZ4ecoqxz6g2rzWZ6HUFoOp888U44fHjVkMEABpuNoNRUpJ46BdakdO0ZEIDgzZth6uqCZXAQXoGBiNm1C7UnTnw3W3NKuNKes93dS0MyMuRMlms+ax0fR+udO+UWk6lgtvb8H1oILgG8hlOLAAAAAElFTkSuQmCC><link rel=canonical href="https://web.stanford.edu/~ouster/cgi-bin/cs190-winter18/lecture.php?topic=modularDesign"><meta http-equiv=content-security-policy content="default-src 'none'; font-src 'self' data:; img-src 'self' data:; style-src 'unsafe-inline'; media-src 'self' data:; script-src 'unsafe-inline' data:;"></head>
+ <body id=lectureSmall class=vsc-initialized>
+ <div id=shell>
+ <div id=header>
+ <h1><a href=https://web.stanford.edu/~ouster/cgi-bin/cs190-winter18/index.php>CS 190: Software Design Studio (Winter 2018)</a></h1>
+ <div id=navigation>
+ <table cellspacing=0>
+ <tbody><tr>
+ <td class=leftSpacer></td>
+ <td><a href=https://web.stanford.edu/~ouster/cgi-bin/cs190-winter18/index.php>Home</a></td>
+ <td><a href=https://web.stanford.edu/~ouster/cgi-bin/cs190-winter18/info.php>Class Info</a></td>
+ <td class=selected><a href=https://web.stanford.edu/~ouster/cgi-bin/cs190-winter18/lectures.php>Classes</a></td>
+ <td><a href=https://web.stanford.edu/~ouster/cgi-bin/cs190-winter18/projects.php>Projects</a></td>
+ <td class=filler></td>
+ </tr>
+ </table>
+ </div>
+ </div>
+ <div id=body>
+<div id=lectureNotes>
+ <h1>Modular Design</h1>
+<p class=heading>
+ Lecture Notes for CS 190<br>
+ Winter 2018<br>
+ John Ousterhout
+</p>
+<div class=spacer></div>
+<ul><li>Reading: Chapters 4-7, 14 of book
+</ul>
+<div class=spacer></div>
+<ul><li>How to minimize dependencies?
+</ul>
+<h2>Modular Design </h2>
+<ul><li>Divide system into <i>modules</i> that are relatively independent
+<li>Ideal: each module completely independent of the others
+ <ul><li>System complexity = complexity of worst module
+ </ul>
+<li>In reality, modules are not completely independent
+ <ul><li>Some modules must invoke facilities in other modules
+ <li>Design decisions in one module must sometimes be known to other
+ modules
+ <li>Can't change one module without understanding parts of
+ other modules
+ </ul>
+<li>Divide each module into two parts:
+ <ul><li><i>Interface</i>: anything about the module that
+ must be known to other modules
+ <ul><li>Formal aspects (in the code): method signatures, public variables,
+ etc.
+ <li>Informal aspects: overall behavior, side effects, constraints
+ on usage, etc.
+ <li>Informal aspects can only be described with comments
+ </ul>
+ <li><i>Implementation</i>: code that carries out the promises made
+ by the interface
+ </ul>
+<li>Goal: interface should be much simpler than the implementation
+ <ul><li>If a change affects only a module's implementation, but not
+ its interface, then it will not affect any other module
+ </ul>
+</ul>
+<h2>Abstraction</h2>
+<ul><li>A simplified view of something that omits unimportant details
+<li>Interface: abstraction of a module
+<li>Goal: define simple abstractions that provide rich functionality
+</ul>
+<h2>Classes Should be Deep</h2>
+<ul><li>Deep class: small interface, lots of functionality
+ <ul><li>Lots of information hidden
+ </ul>
+<li>Example: Unix system calls for file I/O
+<div class=spacer></div>
+<li>Shallow class
+ <ul><li>Complex interface and/or not much functionality
+ <li>Invoking a method isn't much easier than just typing in the code
+ of the method.
+ <li>Shallow classes don't hide much information
+ <li>Example: linked list
+ </ul>
+ <ul><li>Also see <a href=https://web.stanford.edu/~ouster/cgi-bin/cs190-winter18/downloads/User.java>User.java</a>
+ <li>Every class and method introduces complexity with its
+ interface
+ <li>Goal: get a lot of functionality for that complexity
+ <li>If a class is shallow, you have to spend a lot of time
+ learning the interface, compared to how much time the
+ class saves you.
+ </ul>
+<div class=spacer></div>
+<li>Many courses teach students that "classes should be small":
+ results in shallow classes.
+<li>Classitis: small classes taken to the extreme
+ <ul><li>Each class adds the least possible amount of functionality to
+ existing classes
+ <li>Bad example: Java libraries
+ </ul>
+<li>Size doesn't really matter that much
+ <ul><li>Classes in the range of 200-2000 lines are fine
+ <li>The most important thing is depth: the power of the abstraction
+ </ul>
+<li>It's more important for a class to have a simple interface than
+ a simple implementation
+</ul>
+<h2>Information Hiding</h2>
+<ul><li>First proposed by David Parnas in a classic paper
+ "<a href=https://www.cs.umd.edu/class/spring2003/cmsc838p/Design/criteria.pdf>On
+ the Criteria To Be Used in Decomposing Systems into Modules</a>"
+ <ul><li>More than 40 years old, but still one of the most important papers
+ in all of systems.
+ </ul>
+<li>Each module (class) should encapsulate certain knowledge or design
+ decisions:
+<li>The knowledge/design decisions are only known to the one module
+<li>The interface does not reflect this information (much)
+<li>Benefits:
+ <ul><li>Simpler interface (deeper class)
+ <li>Can modify the implementation without impacting other classes
+ </ul>
+<li>This is the single most important idea in software design; will revisit
+ it over and over.
+<div class=spacer></div>
+<li>Information leakage: opposite of information hiding
+ <ul><li>Implementation details exposed, other classes depend on them
+ <li>Anything in the interface is leaked
+ <li>Back-door leakage: not visible in the interface
+ </ul>
+<li>Temporal decomposition: one of the most common causes of information
+ leakage
+ <ul><li>Code structure reflects the <i>order</i> in which operations execute
+ </ul>
+<li>Using classes does not necessarily guarantee information hiding!
+ <ul><li>Example: private variables can still be leaked
+ </ul>
+<li>When you see information leakage, look for a way to bring all the
+ information together in one place
+<li>Making classes a bit larger often creates opportunities for better
+ information hiding
+</ul>
+<div class=spacer></div>
+<ul><li>Questions to ask yourself:
+ <ul><li>What is the unique value provided by this class (something this class
+ does, but no other class)?
+ <li>What is the key knowledge that the class uses to provide
+ that value?
+ <li>What's the least possible amount of that knowledge that must be
+ exposed through the interface?
+ </ul>
+</ul>
+<h2>Generic Classes are Deeper</h2>
+<ul><li>Should new classes be general-purpose or special-purpose?
+ <ul><li>Special-purpose: just do exactly what's needed today
+ <li>General-purpose: solve a range of problems that may in the future
+ </ul>
+<li>My advice: make classes <i>somewhat generic</i>:
+ <ul><li>Overall capabilities reflect current needs
+ <li>Design an interface that is generic enough to be used for other
+ purposes besides today's needs
+ <li>Result: simpler and deeper interface than special-purpose approach
+ </ul>
+<li>Example from text editor project
+<div class=spacer></div>
+<li>Questions to ask yourself:
+ <ul><li>What is the simplest API that will cover all of my current needs?
+ <li>In how many situations will this method be used?
+ <li>Is this API convenient to use for my current needs?
+ </ul>
+</ul>
+<h2>New Layer, New Abstraction</h2>
+<ul><li>Each layer's abstraction should be different from the layer above it and
+ the layer below it.
+<li>Red flag: pass-through methods
+ <ul><li>Decide <i>what's important</i>, design the interface around that
+ <ul><li>Focus on the things that are done most frequently
+ <li>Technique #1: if a particular task is invoked repeatedly,
+ design an API around that task (even better, do it automatically,
+ without having to be invoked).
+ <li>Technique #2: if a collection of tasks are not identical,
+ look for common features shared by all of them; design
+ APIs for the common features.
+ <li>It's OK to provide APIs for infrequently-used features,
+ but design them in a way that you don't need to be
+ aware of them when using the common features.
+ </ul>
+ </ul>
+<div class=spacer></div>
+<li>Bad example: Java I/O
+<div class=spacer></div>
+<li>Good example: device-independent I/O in UNIX/Linux:
+ <ul><li>Before UNIX: different kernel calls for opening and accessing
+ files vs. devices.
+ <ul><li>Different kernel calls for each device: terminal, tape, etc.
+ <li>Different naming mechanisms for each device
+ </ul>
+ <li>UNIX emphasized commonality across devices:
+ <ul><li>Devices have names in the file system: special device files
+ <li>All devices have same basic access structure: open, read,
+ write, seek, close
+ <li>Handle device-specific operations with one additional kernel
+ call:
+ <div class=code><pre>int result = ioctl(int fd, int request,
+        void* inBuffer, int inputSize,
+        void* outBuffer, int outputSize);
+</pre></div>
+ </ul>
+ </ul>
+</ul>
+<div class=spacer></div>
+<ul><li>How much to plan ahead?
+ <ul><li>"Should I implement extra features beyond those that I need today?
+ <li>Design facilities that are general-purpose when possible
+ (but don't get carried away)
+ <li>Don't create a lot of specific features that aren't needed now;
+ you can always add them later.
+ <li>When you discover that new features or a more general architecture
+ are needed, do it right away: don't hack around it.
+ </ul>
+<div class=spacer></div>
+<li><b>The Martyr Principle</b>
+ <ul><li>Module writers should embrace suffering:
+ <ul><li>Take on hard problems
+ <li>Solve completely
+ <li>Make solution easy for others to use
+ <li>Take more challenges for yourself, so that others have
+ fewer issues to deal with
+ </ul>
+ <li>Pull complexity down into modules:
+ <ul><li>Let a few module developers suffer, rather than thousands
+ of users
+ <li>Simple APIs are more important than a simple implementation
+ </ul>
+ <li>Solve, don't punt:
+ <ul><li>Handle error conditions rather than throwing exceptions
+ <li>Minimize "voodoo constants" (configuration parameters)
+ <ul><li>If you don't know the right value, how will a user or
+ administrator ever figure it out?
+ </ul>
+ </ul>
+ </ul>
+<div class=spacer></div>
+<li>Are long methods OK?
+ <ul><li>Sometimes: see <a href=https://web.stanford.edu/~ouster/cgi-bin/cs190-winter18/downloads/TransportDispatcher.cc>TransportDispatcher.cc</a>
+ (method consists of relatively independent pieces).
+ <li>Shorter is generally better, but only decompose if it can
+ be done cleanly (are there dependencies between the parts?).
+ </ul>
+<div class=spacer></div>
+<li>Applying These Ideas
+ <ul><li>May be hard initially to apply these ideas when writing code.
+ <li>Make 2 designs and compare
+ <li>Pick one and write some code
+ <li>Watch for red flags
+ <li>Revise code
+ <li>Take advantage of code reviews
+ </ul>
+</ul>
+</div>
+ </div>
+ <div id=footer><a href=https://web.stanford.edu/~ouster/cgi-bin/cs190-winter18/index.php>CS 190: Software Design Studio (Winter 2018)</a><br>
+ Stanford University<br>
+ </div>
+ 
+</div>
