@@ -4,7 +4,7 @@ favicon: calendar
 image: /img/cal.png
 ---
 
-Hi future friend. You've found my secret video call scheduler. Pick a time below that works for you.
+Hey! You found my secret video call scheduler. Pick a time below that works for you.
 
 <!-- Calendly inline widget begin -->
 <div class="calendly-inline-widget" data-url="https://calendly.com/alexgrin?hide_landing_page_details=1&hide_gdpr_banner=1" style="min-width:320px;height:1000px;"></div>
