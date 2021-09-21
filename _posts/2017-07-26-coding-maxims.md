@@ -40,6 +40,6 @@ _numbered for ease of reference, not for priority_
 
 15. first you don't know the rules, then you learn the rules, then you break the rules
 
-See also: [programming principles](https://en.wikipedia.org/wiki/Category:Programming_principles), [hacker laws](https://github.com/dwmkerr/hacker-laws) ([a](/archive/github.com~dwmkerr~hacker-laws.html))
+See also: [programming principles](https://en.wikipedia.org/wiki/Category:Programming_principles), [hacker laws](https://github.com/dwmkerr/hacker-laws) ([a](/archive/github.com~dwmkerr~hacker-laws.html)), [Dieter Rams' principles](https://github.com/zedr/dieter-rams-10-applied-to-software) ([a](/archive/github.com~zedr~dieter-rams-10-applied-to-software.html))
 
 *Originally posted [here](https://gist.github.com/lyoshenka/0a43205aa9a072b196ff87e2c689a8b9)*
