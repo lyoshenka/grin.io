@@ -8,7 +8,7 @@ I assume you're here because you want to pay me for something or just send me so
 ## Fiat
 
 - [Paypal](https://www.paypal.com/paypalme/alexgrin)
-- [Venmo](www.venmo.com/u/lyoshenka) `@lyoshenka`
+- [Venmo](https://www.venmo.com/u/lyoshenka) `@lyoshenka`
 
 
 ## Crypto
