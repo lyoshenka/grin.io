@@ -15,7 +15,7 @@ I assume you're here because you want to pay me for something or just send me so
 
 Click addresses to expand and show QR code
 
-- BTC: `bc1q9763kvq2rn4hakwy6rwy7y5ef2a2luz3k7t0z60yvh6clzfajlfsq2hsfl`
+- BTC: `bc1qp48hdsjg6z2faw2pcsjsgd5p53qplwlahc0s7qkxajut6m2v6snqm98x6p`
 - ETH: `agrin.eth` or `0x3dedb545e9b89f63fa71ab75497735d802c9d26f`
 - SOL: `grin.sol` or `7gTmu6nMCAR4URzcoJVvYx8bzeiWyQvrXLcp8ivuXu7v`
 - LBC: `@grin` or `bTgZsMQaggj2j1wxsX7L5gciTX3g6vzKgX`
