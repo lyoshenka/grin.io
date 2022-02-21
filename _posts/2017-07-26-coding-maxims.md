@@ -8,9 +8,8 @@ _numbered for ease of reference, not for priority_
   - ![cant have 0-days or bugs if I dont write any code](/img/no-bugs.jpg)
   - our users dont care about the code
   - every line of code has costs (your time, readability, maintainability, complexity)
-    - its like owning a house with lots of rooms. its nice when your friends come over once a month, but you pay rent every day
+  - its like owning a house with lots of rooms. its nice when your friends come over once a month, but you pay rent every day
   - dont add features unless you're sure it is necessary
-  - dont optimize prematurely
 
 2. DRY DRY [DRY](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself)
 
@@ -36,7 +35,7 @@ _numbered for ease of reference, not for priority_
 
 13. [write tests. not too many. mostly integration.](https://kentcdodds.com/blog/write-tests) ([a](/archive/kentcdodds.com~blog~write-tests.html))
 
-14. comments should describe [what's not obvious](https://web.stanford.edu/~ouster/cgi-bin/cs190-winter18/lecture.php?topic=comments) ([a](/archive/web.stanford.edu~~ouster~cgi-bin~cs190-winter18~lecture.php%3ftopic=comments.html)) ([this book](https://www.goodreads.com/en/book/show/39996759-a-philosophy-of-software-design) ([a](/archive/www.goodreads.com~en~book~show~39996759-a-philosophy-of-software-design.html)) changed my mind about comments)
+14. comments should describe [what's not obvious](https://web.stanford.edu/~ouster/cgi-bin/cs190-winter18/lecture.php?topic=comments) ([a](/archive/web.stanford.edu~~ouster~cgi-bin~cs190-winter18~lecture.php%3ftopic=comments.html)). i used to hate comments but [this book](https://www.goodreads.com/en/book/show/39996759-a-philosophy-of-software-design) ([a](/archive/www.goodreads.com~en~book~show~39996759-a-philosophy-of-software-design.html)) changed my mind.
 
 15. first you don't know the rules, then you learn the rules, then you break the rules
 
