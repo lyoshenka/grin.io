@@ -1,7 +1,7 @@
 ---
 title: Let's Connect 👋
-favicon: calendar
-image: /img/cal.png
+favemoji: shaka
+image: /img/magritte-art-of-conversation-square.jpg
 ---
 
 Hey! You found my secret video call scheduler. Pick a time below that works for you.
