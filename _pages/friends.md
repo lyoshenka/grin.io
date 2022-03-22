@@ -1,5 +1,6 @@
 ---
 title: Let's Have A Chat
+description: 🤙
 favemoji: yellowheart
 image: /img/two-men-talking-in-a-tavern-jean-charles-meissonier-square.jpg
 ---
