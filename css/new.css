@@ -13,6 +13,8 @@
 	--nc-ac-tx: #0C4047;
 }
 
+
+/*
 @media (prefers-color-scheme: dark) {
 	:root {
 		--nc-tx-1: #ffffff;
@@ -27,6 +29,8 @@
 		--nc-ac-tx: #FFFFFF;
 	}
 }
+*/
+
 
 * {
 	/* Reset margins and padding */
