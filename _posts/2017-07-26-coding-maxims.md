@@ -33,11 +33,13 @@ _numbered for ease of reference, not for priority_
 
 12. design [layers of abstraction](https://en.wikipedia.org/wiki/Abstraction_layer) with [deep modules](https://web.stanford.edu/~ouster/cgi-bin/cs190-winter18/lecture.php?topic=modularDesign) ([a](/archive/web.stanford.edu~~ouster~cgi-bin~cs190-winter18~lecture.php%3ftopic=modularDesign.html))
 
-13. [write tests. not too many. mostly integration.](https://kentcdodds.com/blog/write-tests) ([a](/archive/kentcdodds.com~blog~write-tests.html))
+13. prefer [encapsulated complexity](https://vitalik.ca/general/2022/02/28/complexity.html) ([a](/archive/vitalik.ca~general~2022~02~28~complexity.html))
 
-14. comments should describe [what's not obvious](https://web.stanford.edu/~ouster/cgi-bin/cs190-winter18/lecture.php?topic=comments) ([a](/archive/web.stanford.edu~~ouster~cgi-bin~cs190-winter18~lecture.php%3ftopic=comments.html)). i used to hate comments but [this book](https://www.goodreads.com/en/book/show/39996759-a-philosophy-of-software-design) ([a](/archive/www.goodreads.com~en~book~show~39996759-a-philosophy-of-software-design.html)) changed my mind.
+14. [write tests. not too many. mostly integration.](https://kentcdodds.com/blog/write-tests) ([a](/archive/kentcdodds.com~blog~write-tests.html))
 
-15. first you don't know the rules, then you learn the rules, then you break the rules
+15. comments should describe [what's not obvious](https://web.stanford.edu/~ouster/cgi-bin/cs190-winter18/lecture.php?topic=comments) ([a](/archive/web.stanford.edu~~ouster~cgi-bin~cs190-winter18~lecture.php%3ftopic=comments.html)). i used to hate comments but [this book](https://www.goodreads.com/en/book/show/39996759-a-philosophy-of-software-design) ([a](/archive/www.goodreads.com~en~book~show~39996759-a-philosophy-of-software-design.html)) changed my mind.
+
+16. first you don't know the rules, then you learn the rules, then you break the rules
 
 See also: [programming principles](https://en.wikipedia.org/wiki/Category:Programming_principles), [hacker laws](https://github.com/dwmkerr/hacker-laws) ([a](/archive/github.com~dwmkerr~hacker-laws.html)), [Dieter Rams' principles](https://github.com/zedr/dieter-rams-10-applied-to-software) ([a](/archive/github.com~zedr~dieter-rams-10-applied-to-software.html)), [the Zen of python](https://www.python.org/dev/peps/pep-0020/) ([a](/archive/python.org-dev-peps-pep-0020.html)), [Urbit precepts](https://urbit.org/docs/development/precepts) ([a](/archive/urbit.org-docs-development-precepts.html))
 
