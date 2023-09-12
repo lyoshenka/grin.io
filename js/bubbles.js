@@ -36,8 +36,12 @@ function caseFlip(char, shouldFlip) {
     char;
 }
 
+
+const bubbleChars = "oO1"
+const bubbleRegex = new RegExp("[" + bubbleChars.split("").join("|") + "]")
+
 function isBubble(char) {
-  return char === 'o' || char === 'O';
+  return bubbleChars.indexOf(char) >= 0;
 }
 
 const pre = document.getElementById("art");
@@ -47,7 +51,7 @@ const lines = content.split("\n");
 const bubbleOrigin = {line: 19, char: 24};
 
 function bubbleStep() {
-  lines[0] = lines[0].replace(/[o|O]/, " ")
+  lines[0] = lines[0].replace(bubbleRegex, " ")
   for (let i = 1; i <= bubbleOrigin.line; i++) {
     for (let j = 0; j < lines[i].length; j++) {
       const char = caseFlip(lines[i][j], chance(1, 2));
@@ -65,7 +69,7 @@ function bubbleStep() {
 
   if (chance(3, 5)) {
     const newBubblePos = bubbleOrigin.char - 2 + getRandomIntInclusive(0, 3);
-    lines[bubbleOrigin.line] = lines[bubbleOrigin.line].replaceAt(newBubblePos, "oO".charAt(getRandomIntInclusive(0, 1)));
+    lines[bubbleOrigin.line] = lines[bubbleOrigin.line].replaceAt(newBubblePos, bubbleChars.charAt(getRandomIntInclusive(0, bubbleChars.length)));
   }
 
   pre.innerHTML = pre.innerHTML.split("-->")[0] + "-->" + lines.join("\n");
