@@ -39,7 +39,9 @@ _numbered for ease of reference, not for priority_
 
 15. comments should describe [what's not obvious](https://web.stanford.edu/~ouster/cgi-bin/cs190-winter18/lecture.php?topic=comments) ([a](/archive/web.stanford.edu~~ouster~cgi-bin~cs190-winter18~lecture.php%3ftopic=comments.html)). i used to hate comments but [this book](https://www.goodreads.com/en/book/show/39996759-a-philosophy-of-software-design) ([a](/archive/www.goodreads.com~en~book~show~39996759-a-philosophy-of-software-design.html)) changed my mind.
 
-16. first you don't know the rules, then you learn the rules, then you break the rules
+16. [Postel's law](https://en.wikipedia.org/wiki/Robustness_principle) is wrong -- be strict both ways
+
+17. first you don't know the rules, then you learn the rules, then you break the rules
 
 See also: [programming principles](https://en.wikipedia.org/wiki/Category:Programming_principles), [hacker laws](https://github.com/dwmkerr/hacker-laws) ([a](/archive/github.com~dwmkerr~hacker-laws.html)), [Dieter Rams' principles](https://github.com/zedr/dieter-rams-10-applied-to-software) ([a](/archive/github.com~zedr~dieter-rams-10-applied-to-software.html)), [the Zen of python](https://www.python.org/dev/peps/pep-0020/) ([a](/archive/python.org-dev-peps-pep-0020.html)), [Urbit precepts](https://urbit.org/docs/development/precepts) ([a](/archive/urbit.org-docs-development-precepts.html))
 
