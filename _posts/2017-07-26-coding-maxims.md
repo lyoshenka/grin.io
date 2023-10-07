@@ -4,20 +4,20 @@ priority: 1
 
 _numbered for ease of reference, not for priority_
 
-1. code is debt (and bad code is an [unhedged call option](https://www.castsoftware.com/blog/bad-code-isnt-technical-debt-its-an-unhedged-call-option) ([a](/archive/www.castsoftware.com~blog~bad-code-isnt-technical-debt-its-an-unhedged-call-option.html)))
+1. code is debt, and bad code is an [unhedged call option](https://www.castsoftware.com/blog/bad-code-isnt-technical-debt-its-an-unhedged-call-option) ([a](/archive/www.castsoftware.com~blog~bad-code-isnt-technical-debt-its-an-unhedged-call-option.html))
   - ![cant have 0-days or bugs if I dont write any code](/img/no-bugs.jpg)
   - our users dont care about the code
   - every line of code has costs (your time, readability, maintainability, complexity)
   - its like owning a house with lots of rooms. its nice when your friends come over once a month, but you pay rent every day
-  - dont add features unless you're sure it is necessary
+  - dont add features prematurely
 
-2. DRY DRY [DRY](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself)
+2. ~~DRY DRY [DRY](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself)~~ actually [DAMP](https://twitter.com/matryer/status/1082278413510082560) ([a](/img/damp.png)) is better
 
 3. keep it [simple](https://github.com/matthiasn/talk-transcripts/blob/master/Hickey_Rich/SimpleMadeEasy.md) ([a](/archive/github.com~matthiasn~talk-transcripts~blob~master~Hickey_Rich~SimpleMadeEasy.md.html)) (especially [at first](https://en.wikipedia.org/wiki/John_Gall_(author)#Gall.27s_law))
 
 4. be consistent
 
-5. be predictable (aka no magic)
+5. no magic! be predictable
 
 6. no [magic numbers/strings](https://en.wikipedia.org/wiki/Magic_number_(programming)#Unnamed_numerical_constants) — use constants instead
 
@@ -39,7 +39,7 @@ _numbered for ease of reference, not for priority_
 
 15. comments should describe [what's not obvious](https://web.stanford.edu/~ouster/cgi-bin/cs190-winter18/lecture.php?topic=comments) ([a](/archive/web.stanford.edu~~ouster~cgi-bin~cs190-winter18~lecture.php%3ftopic=comments.html)). i used to hate comments but [this book](https://www.goodreads.com/en/book/show/39996759-a-philosophy-of-software-design) ([a](/archive/www.goodreads.com~en~book~show~39996759-a-philosophy-of-software-design.html)) changed my mind.
 
-16. [Postel's law](https://en.wikipedia.org/wiki/Robustness_principle) is wrong -- be strict both ways
+16. [Postel's law](https://en.wikipedia.org/wiki/Robustness_principle) is wrong — be strict both ways
 
 17. first you don't know the rules, then you learn the rules, then you break the rules
 
