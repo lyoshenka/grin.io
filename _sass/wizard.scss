@@ -24,9 +24,10 @@ html {
   -webkit-text-size-adjust: 100%;
 }
 
+
 body {
   margin: 0;
-  font-size: 22px;
+  font-size: 2.2rem;
   margin: 0;
   color: $silver;
   background: $blue;
@@ -45,29 +46,38 @@ main {
   justify-content: space-around;
 }
 
-section, aside {
+section {
   width: 550px;
   display: flex;
   align-items: center;
+  > div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 4rem;
+  }
 }
+
 
 h1,
 h2 {
   font-weight: normal;
+  margin: 0;
 }
 h1 {
   font-size: 48px;
-  margin: 0.67em 0 1rem;
+  //margin: 0.67em 0 1rem;
+  margin-bottom: 1rem;
   line-height: 1;
 }
 h2 {
-  margin-top: 0;
-  margin-bottom: 50px;
+  //margin-top: 0;
+  //margin-bottom: 50px;
   font-size: 30px;
 }
 
 p {
-  margin-bottom: 36px;
+  margin: 0;
 }
 
 a {
@@ -89,11 +99,13 @@ a {
   }
 }
 
+
 .social {
   display: flex;
   align-content: space-around;
-  //width: 65%;
-  margin: 6rem auto;
+  width: 100%;
+  margin-top: 1rem;
+  //margin: 1rem auto;
 
   a {
     flex: 1;
@@ -119,18 +131,6 @@ a {
   }
 }
 
-pre {
-  font-size: 2.8vw;
-  font-weight: bold;
-  line-height: normal;
-  margin: 0;
-  font-family: Courier, "Courier New", Consolas, "Liberation Mono", monospace;
-}
-@media (min-width: 550px) {
-  pre {
-    font-size: 16.5px;
-  }
-}
 
 ul {
   list-style: none;
@@ -155,6 +155,64 @@ ul {
 .posts {
   padding-left: 1.5rem;
 }
+
+
+.grin {
+  position: relative;
+  //margin-right: 1rem;
+
+  &:after {
+    content: "";
+    position: absolute;
+    left: -8px;
+    bottom: -2px;
+    height: 64px;
+    width: 120%;
+    border: solid 2px $link;
+    border-color: transparent transparent $link transparent;
+    border-radius: 50%;
+  }
+}
+
+//.grin:hover {
+//  background-image: linear-gradient(
+//                  225deg,
+//                  #231557 0%,
+//                  #44107a 29%,
+//                  #ff1361 67%,
+//                  #fff800 100%
+//  );
+//  background-size: auto auto;
+//  background-clip: border-box;
+//  -webkit-background-clip: text;
+//  background-size: 200% auto;
+//  color: #fff;
+//  background-clip: text;
+//  text-fill-color: transparent;
+//  -webkit-text-fill-color: transparent;
+//  animation: textclip 2s linear infinite;
+//  animation-direction: reverse;
+//  display: inline-block;
+//}
+//@keyframes textclip {
+//  to {
+//    background-position: 200% center;
+//  }
+//}
+
+pre#art {
+  font-size: 2.8vw;
+  font-weight: bold;
+  line-height: normal;
+  margin: 0;
+  font-family: Courier, "Courier New", Consolas, "Liberation Mono", monospace;
+}
+@media (min-width: 550px) {
+  pre#art {
+    font-size: 16.5px;
+  }
+}
+
 
 /*
 .grin {

@@ -1,5 +1,5 @@
 ---
-priority: 1
+priority: 2
 ---
 
 _numbered for ease of reference, not for priority_
