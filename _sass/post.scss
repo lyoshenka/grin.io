@@ -109,6 +109,12 @@ pre, code {
   font-size: 1.6rem;
 }
 
+iframe[src^="https://www.youtube.com"] {
+  aspect-ratio: 16 / 9;
+  width: 100%;
+  frameborder: 0;
+}
+
 footer {
   margin-top: 10rem;
   text-align: center;
