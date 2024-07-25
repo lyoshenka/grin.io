@@ -19,7 +19,7 @@ Click addresses to expand and show QR code
 - ETH: `agrin.eth` or `0x3dedb545e9b89f63fa71ab75497735d802c9d26f` (mainnet, op, or base preferred)
 - USDC on Base: [Daimo](https://daimo.com/link/account/grin)
 - SOL: `grin.sol` or `7gTmu6nMCAR4URzcoJVvYx8bzeiWyQvrXLcp8ivuXu7v`
-- LBC: `@grin` or `bTgZsMQaggj2j1wxsX7L5gciTX3g6vzKgX`
+<!-- - LBC: `@grin` or `bTgZsMQaggj2j1wxsX7L5gciTX3g6vzKgX` -->
 
 
 ## Cash
