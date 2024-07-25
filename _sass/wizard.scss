@@ -10,7 +10,9 @@
   font-style: normal;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: border-box;
 }
 
@@ -24,11 +26,9 @@ html {
   -webkit-text-size-adjust: 100%;
 }
 
-
 body {
   margin: 0;
-  font-size: 2.2rem;
-  margin: 0;
+  font-size: 2rem;
   color: $silver;
   background: $blue;
   font-family: "Sofia Pro", Arial, sans-serif;
@@ -38,7 +38,7 @@ body {
 
 main {
   margin: 0 auto;
-  padding: 20px;
+  padding: 8rem 4rem;
   max-width: 1300px;
   min-height: 100vh;
   display: flex;
@@ -64,22 +64,13 @@ section {
   }
 }
 
-
-h1,
-h2 {
+h1 {
   font-weight: normal;
   margin: 0;
-}
-h1 {
   font-size: 48px;
   //margin: 0.67em 0 1rem;
   margin-bottom: 1rem;
   line-height: 1;
-}
-h2 {
-  //margin-top: 0;
-  //margin-bottom: 50px;
-  font-size: 30px;
 }
 
 p {
@@ -91,20 +82,14 @@ a {
   text-decoration: none;
   color: $link;
 
-  //border-bottom: 2px solid lighten($link, 20%);
-  //transition: 150ms;
   box-shadow: inset 0 -3px lighten($blue, 10%);
-  transition: background 100ms cubic-bezier(.33,.66,.66,1);
+  transition: background 100ms cubic-bezier(0.33, 0.66, 0.66, 1);
 
   &:active,
   &:hover {
-//    outline-width: 0;
-//    color: $active-link;
-//    border-bottom: solid 1px $active-link;
     background: lighten($blue, 10%);
   }
 }
-
 
 .social {
   display: flex;
@@ -117,11 +102,6 @@ a {
     text-align: center;
     padding: 5px 3px 0;
     box-shadow: none;
-
-    &:active,
-    &:hover {
-      //border-bottom: none;
-    }
   }
 
   svg {
@@ -137,44 +117,17 @@ a {
   }
 }
 
-
-ul {
-  list-style: none;
-  margin: 1rem 0;
-  padding: 0;
-
-  li {
-    padding-left: 2rem;
-    position: relative;
-
-    &:before {
-      display: block;
-      content: "-";
-      position: absolute;
-      top: -0.5rem;
-      left: 0;
-      font-size: 2.4rem;
-    }
-  }
-}
-
-.posts {
-  padding-left: 1.5rem;
-}
-
-
 .grin {
   position: relative;
-  //margin-right: 1rem;
 
   &:after {
     content: "";
     position: absolute;
-    left: -8px;
-    bottom: -2px;
+    left: -4px;
+    bottom: -8px;
     height: 64px;
-    width: 120%;
-    border: solid 2px $link;
+    width: 110%;
+    border: solid 4px $link;
     border-color: transparent transparent $link transparent;
     border-radius: 50%;
   }
@@ -218,52 +171,3 @@ pre#art {
     font-size: 16.5px;
   }
 }
-
-
-/*
-.grin {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cpath fill='none' stroke='%23ff9800' stroke-width='2' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
-  background-position: 0 100%;
-  background-size: auto 6px;
-  background-repeat: repeat-x;
-}
-*/
-
-
-// Flashy links
-// https://codepen.io/giuliamalaroda/pen/QBOGdG
-/*
-a {
-   text-decoration: none;
-   line-height: 1; //19px;
-   position: relative;
-   z-index: 0;
-   display: inline-block;
-   padding: 5px 5px;
-   overflow: hidden;
-   color: $link;
-   vertical-align: bottom;
-   transition: color .3s ease-out;
-}
-a::before {
-   content: "";
-   position: absolute;
-   z-index: -1;
-   top: 0;
-   left: 0;
-   transform: translateY(calc(100% - 2px));
-   width: 100%;
-   height: 100%;
-   //background-image: linear-gradient(60deg, #64b3f4 0%, #c2e59c 100%);
-   background-image: linear-gradient(60deg, lighten($blue,30%) 0%, #c2e59c 100%);
-   transition: transform .2s ease-out;
-}
-a:hover {
-   color: #fff;
-}
-a:hover::before {
-   transform: translateY(0);
-   transition: transform .2s ease-out;
-}
-.social a { padding-bottom: 5px }
-*/

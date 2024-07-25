@@ -1,50 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Alex Grintsvayg, Web Wizard</title>
+    <link rel="stylesheet" type="text/css" href="/css/wizard.css" />
+    <link
+      rel="alternate"
+      href="/atom.xml"
+      title="{{ site.title }}"
+      type="application/atom+xml"
+    />
+    {% seo title=false %}
+  </head>
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Alex Grintsvayg, Web Wizard</title>
-  <link rel="stylesheet" type="text/css" href="/css/wizard.css">
-  <link rel="alternate" href="/atom.xml" title="{{ site.title }}" type="application/atom+xml" />
-  {% seo title=false %}
-</head>
-
-<body>
-  <main>
-
-    <section>
-      <div>
+  <body>
+    <main>
+      <section>
         <div>
-          <h1>Alex <span class="grin">Grin</span>tsvayg</h1>
-          <h2>Web Wizard</h2>
-        </div>
+          <div>
+            <h1>Hi, I'm <span class="grin">Grin</span></h1>
+          </div>
 
-        <p>
-          I'm building <a href="https://cabin.city">Cabin</a>, a network city of modern villages.
-          It's the city that I want to live in with my family, my friends, and my tribe.
-        </p>
+          <p>
+            I'm building <a href="https://cabin.city">Cabin</a>, a network city
+            of modern villages. It's
+            <a href="https://www.youtube.com/watch?v=_m8lliIqAfs"
+              >the city I want to live in</a
+            >
+            with my family, my friends, and my tribe.
+          </p>
 
-        <p>
-          On the side I run <a href="https://vibe.camp">Vibecamp</a>, a Burning Man for friendly ambitious nerds.
-        </p>
+          <p>
+            On the side, I create IRL gatherings for URL communities such as
+            <a href="https://vibe.camp">Vibecamp</a>,
+            <a href="https://farcon.xyz">FarCon</a>, and
+            <a href="https://tns.camp">TNS Camp</a>.
+          </p>
 
-        <p>
-          Other companies I've founded: <a href="https://lbry.com">LBRY</a>, <a href="https://odysee.com">Odysee</a>, <a href="https://usetopscore.com">TopScore</a>.
-        </p>
+          <p>
+            Before Cabin, I founded <a href="https://lbry.com">LBRY</a>, a
+            decentralized digital content protocol. At peak it was the most-used
+            crypto app in the world, with over 3 million daily users via
+            <a href="https://odysee.com">Odysee</a>.
+          </p>
 
-        <p class="social">
+          <p>
+            I'm an ex-pro ultimate frisbee player. My team won the first ever
+            <a href="https://watchufa.com">UFA</a> championship. I've also
+            played club ultimate on several elite teams, earning 2nd place at
+            Nationals in 2016 and a top-8 finish at Masters Worlds in 2022.
+          </p>
 
-          <a id="e" href="mailto:first-initial@this-domain" target="_blank" rel="noopener noreferrer" title="Email">
-            <svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
-              <g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <circle cx="12" cy="12" r="4"/>
-                <path d="M16 8v5a3 3 0 0 0 6 0v-1a10 10 0 1 0-3.92 7.94"/>
-              </g>
-            </svg>
-          </a>
+          <p>
+            During my Ultimate arc, I founded
+            <a href="https://usetopscore.com">TopScore</a>, a sports event
+            management app. It now serves thousands of athletes across hundreds
+            of orgs in dozens of countries around the world.
+          </p>
 
-          <!---
+          <p class="social">
+            <a id="e" href="mailto:first-initial@this-domain" title="Email">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                preserveAspectRatio="xMidYMid meet"
+                viewBox="0 0 24 24"
+              >
+                <g
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <circle cx="12" cy="12" r="4" />
+                  <path d="M16 8v5a3 3 0 0 0 6 0v-1a10 10 0 1 0-3.92 7.94" />
+                </g>
+              </svg>
+            </a>
+
+            <!---
           <a href="https://twitter.com/grin_io" target="_blank" rel="me noopener noreferrer" title="Tweets">
             <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
               <path d="M23.954 4.38171C23.069 4.78054 22.124 5.05224 21.129 5.1763C22.143 4.54985 22.923 3.56252 23.292 2.38448C22.341 2.9535 21.287 3.36771 20.165 3.5984C19.269 2.61516 17.992 2 16.574 2C13.857 2 11.654 4.25868 11.654 7.04127C11.654 7.44112 11.699 7.8256 11.781 8.19367C7.691 7.9958 4.066 5.98216 1.64 2.93812C1.213 3.67837 0.974 4.53858 0.974 5.47568C0.974 7.22889 1.844 8.76988 3.162 9.67519C2.355 9.64854 1.596 9.42093 0.934 9.04363V9.10617C0.934 11.5514 2.627 13.5907 4.88 14.0552C4.467 14.169 4.031 14.2305 3.584 14.2305C3.27 14.2305 2.969 14.1997 2.668 14.1423C3.299 16.1447 5.113 17.6047 7.272 17.6457C5.592 18.998 3.463 19.8039 1.17 19.8039C0.78 19.8039 0.391 19.7803 0 19.7352C2.189 21.1644 4.768 22 7.557 22C16.611 22 21.556 14.3146 21.556 7.66053C21.556 7.44625 21.556 7.22992 21.541 7.01461C22.502 6.3082 23.341 5.41518 24.001 4.40221L23.954 4.38171Z" />
@@ -52,15 +87,21 @@
           </a>
           --->
 
-          <a href="https://warpcast.com/grin" target="_blank" rel="me noopener noreferrer" title="Farcaster">
-            <svg viewBox="0 0 169 155" xmlns="http://www.w3.org/2000/svg">
-              <path d="M29 0H138V155H122V84H121.843C120.075 64.3773 103.583 49 83.5 49C63.4169 49 46.9253 64.3773 45.157 84H45V155H29V0Z"/>
-              <path d="M0 22L6.5 44H12V133C9.23858 133 7 135.239 7 138V144H6C3.23858 144 1 146.239 1 149V155H57V149C57 146.239 54.7614 144 52 144H51V138C51 135.239 48.7614 133 46 133H40V22H0Z" />
-              <path d="M123 133C120.239 133 118 135.239 118 138V144H117C114.239 144 112 146.239 112 149V155H168V149C168 146.239 165.761 144 163 144H162V138C162 135.239 159.761 133 157 133V44H162.5L169 22H129V133H123Z" />
-            </svg>
-          </a>
+            <a href="https://warpcast.com/grin" title="Farcaster" rel="me">
+              <svg viewBox="0 0 169 155" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M29 0H138V155H122V84H121.843C120.075 64.3773 103.583 49 83.5 49C63.4169 49 46.9253 64.3773 45.157 84H45V155H29V0Z"
+                />
+                <path
+                  d="M0 22L6.5 44H12V133C9.23858 133 7 135.239 7 138V144H6C3.23858 144 1 146.239 1 149V155H57V149C57 146.239 54.7614 144 52 144H51V138C51 135.239 48.7614 133 46 133H40V22H0Z"
+                />
+                <path
+                  d="M123 133C120.239 133 118 135.239 118 138V144H117C114.239 144 112 146.239 112 149V155H168V149C168 146.239 165.761 144 163 144H162V138C162 135.239 159.761 133 157 133V44H162.5L169 22H129V133H123Z"
+                />
+              </svg>
+            </a>
 
-          <!---
+            <!---
           <a href="https://t.me/grin_io" target="_blank" rel="me noopener noreferrer" title="Telegram">
             <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
               <path d="M23.9323 3.82074L20.3106 20.7927C20.0374 21.9905 19.3248 22.2887 18.3122 21.7244L12.7939 17.6837L10.1311 20.2284C9.83645 20.5212 9.59 20.7661 9.02209 20.7661L9.41855 15.1815L19.6463 5.99813C20.0909 5.60418 19.5498 5.38591 18.9551 5.77986L6.31113 13.6909L0.867792 11.998C-0.316242 11.6306 -0.337673 10.8214 1.11424 10.2571L22.4054 2.10651C23.3912 1.73917 24.2538 2.32478 23.9323 3.82074V3.82074Z" >
@@ -68,89 +109,32 @@
           </a>
           --->
 
+            <a href="/posts" title="Blog" class="internal">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M6.66667 18.6667H13.3333C13.7111 18.6667 14.0278 18.5389 14.2833 18.2833C14.5389 18.0278 14.6667 17.7111 14.6667 17.3333C14.6667 16.9556 14.5389 16.6389 14.2833 16.3833C14.0278 16.1278 13.7111 16 13.3333 16H6.66667C6.28889 16 5.97222 16.1278 5.71667 16.3833C5.46111 16.6389 5.33333 16.9556 5.33333 17.3333C5.33333 17.7111 5.46111 18.0278 5.71667 18.2833C5.97222 18.5389 6.28889 18.6667 6.66667 18.6667ZM6.66667 13.3333H17.3333C17.7111 13.3333 18.0278 13.2056 18.2833 12.95C18.5389 12.6944 18.6667 12.3778 18.6667 12C18.6667 11.6222 18.5389 11.3056 18.2833 11.05C18.0278 10.7944 17.7111 10.6667 17.3333 10.6667H6.66667C6.28889 10.6667 5.97222 10.7944 5.71667 11.05C5.46111 11.3056 5.33333 11.6222 5.33333 12C5.33333 12.3778 5.46111 12.6944 5.71667 12.95C5.97222 13.2056 6.28889 13.3333 6.66667 13.3333ZM6.66667 8H17.3333C17.7111 8 18.0278 7.87222 18.2833 7.61667C18.5389 7.36111 18.6667 7.04444 18.6667 6.66667C18.6667 6.28889 18.5389 5.97222 18.2833 5.71667C18.0278 5.46111 17.7111 5.33333 17.3333 5.33333H6.66667C6.28889 5.33333 5.97222 5.46111 5.71667 5.71667C5.46111 5.97222 5.33333 6.28889 5.33333 6.66667C5.33333 7.04444 5.46111 7.36111 5.71667 7.61667C5.97222 7.87222 6.28889 8 6.66667 8ZM2.66667 24C1.93333 24 1.30556 23.7389 0.783333 23.2167C0.261111 22.6944 0 22.0667 0 21.3333V2.66667C0 1.93333 0.261111 1.30556 0.783333 0.783333C1.30556 0.261111 1.93333 0 2.66667 0H21.3333C22.0667 0 22.6944 0.261111 23.2167 0.783333C23.7389 1.30556 24 1.93333 24 2.66667V21.3333C24 22.0667 23.7389 22.6944 23.2167 23.2167C22.6944 23.7389 22.0667 24 21.3333 24H2.66667Z"
+                />
+              </svg>
+            </a>
 
-          <a href="/posts" title="Blog">
-            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-              <path d="M6.66667 18.6667H13.3333C13.7111 18.6667 14.0278 18.5389 14.2833 18.2833C14.5389 18.0278 14.6667 17.7111 14.6667 17.3333C14.6667 16.9556 14.5389 16.6389 14.2833 16.3833C14.0278 16.1278 13.7111 16 13.3333 16H6.66667C6.28889 16 5.97222 16.1278 5.71667 16.3833C5.46111 16.6389 5.33333 16.9556 5.33333 17.3333C5.33333 17.7111 5.46111 18.0278 5.71667 18.2833C5.97222 18.5389 6.28889 18.6667 6.66667 18.6667ZM6.66667 13.3333H17.3333C17.7111 13.3333 18.0278 13.2056 18.2833 12.95C18.5389 12.6944 18.6667 12.3778 18.6667 12C18.6667 11.6222 18.5389 11.3056 18.2833 11.05C18.0278 10.7944 17.7111 10.6667 17.3333 10.6667H6.66667C6.28889 10.6667 5.97222 10.7944 5.71667 11.05C5.46111 11.3056 5.33333 11.6222 5.33333 12C5.33333 12.3778 5.46111 12.6944 5.71667 12.95C5.97222 13.2056 6.28889 13.3333 6.66667 13.3333ZM6.66667 8H17.3333C17.7111 8 18.0278 7.87222 18.2833 7.61667C18.5389 7.36111 18.6667 7.04444 18.6667 6.66667C18.6667 6.28889 18.5389 5.97222 18.2833 5.71667C18.0278 5.46111 17.7111 5.33333 17.3333 5.33333H6.66667C6.28889 5.33333 5.97222 5.46111 5.71667 5.71667C5.46111 5.97222 5.33333 6.28889 5.33333 6.66667C5.33333 7.04444 5.46111 7.36111 5.71667 7.61667C5.97222 7.87222 6.28889 8 6.66667 8ZM2.66667 24C1.93333 24 1.30556 23.7389 0.783333 23.2167C0.261111 22.6944 0 22.0667 0 21.3333V2.66667C0 1.93333 0.261111 1.30556 0.783333 0.783333C1.30556 0.261111 1.93333 0 2.66667 0H21.3333C22.0667 0 22.6944 0.261111 23.2167 0.783333C23.7389 1.30556 24 1.93333 24 2.66667V21.3333C24 22.0667 23.7389 22.6944 23.2167 23.2167C22.6944 23.7389 22.0667 24 21.3333 24H2.66667Z" />
-            </svg>
-          </a>
-
-
-          <a href="https://github.com/lyoshenka" target="_blank" rel="me noopener noreferrer" title="Github">
-            <svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
-              <path d="M7.375 16.781l1.25-1.562L4.601 12l4.024-3.219l-1.25-1.562l-5 4a1 1 0 0 0 0 1.562l5 4zm9.25-9.562l-1.25 1.562L19.399 12l-4.024 3.219l1.25 1.562l5-4a1 1 0 0 0 0-1.562l-5-4z"/>
-              <path d="M14.976 3.216l-4 18l-1.953-.434l4-18z"/>
-            </svg>
-          </a>
-
-        </p>
-
-        <!--
-        <p>
-          Projects:
-        </p>
-
-        <div>
-          <h3>Odysee</h3>
-          <p>
-            Founder, 2016-2023
-          </p>
-          <p>
-            A youtube-like frontend for LBRY.
-          </p>
-          <p>
-            Peaked at 3M DAU / 40M MAU, right before the SEC lawsuit went public.
-            Maintained 500k DAU through 2023 with zero marketing spend.
-          </p>
-          <p>
-            Designed the first version, managed the team, wrote significant backend components.
+            <a href="https://github.com/lyoshenka" title="Github" rel="me">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                preserveAspectRatio="xMidYMid meet"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M7.375 16.781l1.25-1.562L4.601 12l4.024-3.219l-1.25-1.562l-5 4a1 1 0 0 0 0 1.562l5 4zm9.25-9.562l-1.25 1.562L19.399 12l-4.024 3.219l1.25 1.562l5-4a1 1 0 0 0 0-1.562l-5-4z"
+                />
+                <path d="M14.976 3.216l-4 18l-1.953-.434l4-18z" />
+              </svg>
+            </a>
           </p>
         </div>
+      </section>
 
-
-        <div>
-          <h3>LBRY</h3>
-          <p>
-            Founder, 2016-2023
-          </p>
-          <p>
-            Decentralized content network (think Bittorrent + Bitcoin)
-          </p>
-          <P>
-            As of 2023, stored 1.7M accounts and 30M pieces of content.
-          </P>
-          <p>
-            I wrote code at every level of the stack: our own l1 blockchain, torrent network, backend apis, desktop/web apps, devops, etc.
-            Later I switched focus to protocol design and system architecture while leading a team of ~8 engineers.
-          </p>
-          <p>
-            We were ultimately bankrupted by the SEC for being a successful crypto company.
-          </p>
-        </div>
-
-
-        <div>
-          <h3>Topscore</h3>
-          <p>
-            Founder, 2011-2015
-          </p>
-          <p>
-            A B2B SaaS product for sports organizations -- mainly ultimate frisbee.
-          </p>
-          <P>
-            Used by hundreds of orgs around the world, processing over a million dollars anually.
-          </P>
-          <p>
-            Bootstrapped the company, wrote all the code for several years. In 2019, sold it to a PE firm. It's still growing today.
-          </p>
-        </div>
-        -->
-
-      </div>
-    </section>
-
-    <section>
-      <pre id="art">
+      <section>
+        <pre id="art">
 <!--
        .*･｡.*･｡.*･｡.*･｡.*･｡.*･｡.*･｡.*･｡.*･｡.*･｡.*･｡
       /                                        \
@@ -193,22 +177,30 @@
   `'---..__   `.                  .´_.._   __       \
            ``'''`.              .'      `'^  `''---'^
                   `-..______..-'
-      </pre>
-    </section>
+        </pre>
+      </section>
+    </main>
 
-  </main>
+    <script>
+      const e = document.getElementById("e"),
+        ee = ("o" + "i.ni" + "rg" + String.fromCharCode(64) + "a")
+          .split("")
+          .reverse()
+          .join("");
+      e.href = "mailto:" + ee;
+      // e.innerHTML = ee;
+      // e.parentNode.style.display = '';
+    </script>
 
-  <script>
-    const e = document.getElementById('e'), ee = ('o' + 'i.ni' + 'rg' + String.fromCharCode(64) + 'a').split('').reverse().join('');
-    e.href = 'mailto:' + ee;
-    // e.innerHTML = ee;
-    // e.parentNode.style.display = '';
-  </script>
+    <script>
+      document.querySelectorAll("a:not(.internal)").forEach((link) => {
+        link.target = "_blank";
+        link.rel = (link.rel + " noopener noreferrer").trim();
+      });
+    </script>
 
-  <script type="text/javascript" src="/js/bubbles.js"></script>
+    <script type="text/javascript" src="/js/bubbles.js"></script>
 
-  {% include piwik.html %}
-
-</body>
-
+    {% include piwik.html %}
+  </body>
 </html>
