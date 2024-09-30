@@ -28,7 +28,7 @@ html {
 
 body {
   margin: 0;
-  font-size: 2rem;
+  font-size: 1.8rem;
   color: $silver;
   background: $blue;
   font-family: "Sofia Pro", Arial, sans-serif;
@@ -63,6 +63,11 @@ section {
     gap: 4rem;
   }
 }
+@media (min-width: 1220px) {
+  section:first-of-type {
+    order: 2;
+  }
+}
 
 h1 {
   font-weight: normal;
@@ -75,6 +80,10 @@ h1 {
 
 p {
   margin: 0;
+}
+
+p.hero {
+  font-size: 2.4rem;
 }
 
 a {
@@ -159,7 +168,7 @@ a {
 //  }
 //}
 
-pre#art {
+pre {
   font-size: 2.8vw;
   font-weight: bold;
   line-height: normal;
@@ -167,7 +176,7 @@ pre#art {
   font-family: Courier, "Courier New", Consolas, "Liberation Mono", monospace;
 }
 @media (min-width: 550px) {
-  pre#art {
+  pre {
     font-size: 16.5px;
   }
 }
