@@ -10,6 +10,19 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: "Source Code Pro";
+  src: url("/font/SourceCodePro-VariableFont_wght.woff2") format("woff2");
+  font-weight: 100 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans 3";
+  src: url("/font/SourceSans3-VariableFont_wght.woff2") format("woff2");
+  font-weight: 100 900;
+  font-style: normal;
+}
+
 *,
 *:before,
 *:after {
@@ -31,8 +44,7 @@ body {
   font-size: 1.8rem;
   color: $silver;
   background: $blue;
-  font-family: "Sofia Pro", Arial, sans-serif;
-  letter-spacing: 0.3px;
+  font-family: 'Source Code Pro', ui-monospace, 'Cascadia Code', Menlo, Consolas, 'DejaVu Sans Mono', monospace;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -58,6 +70,9 @@ section {
     gap: 2rem;
   }
 }
+section.text{
+  letter-spacing: 0.3px;
+}
 @media (min-width: 550px) {
   section > div {
     gap: 4rem;
@@ -70,7 +85,8 @@ section {
 }
 
 h1 {
-  font-weight: normal;
+  font-family: 'Source Sans 3', 'Source Code Pro', ui-monospace, 'Cascadia Code', Menlo, Consolas, 'DejaVu Sans Mono', monospace;
+  font-weight: 500;
   margin: 0;
   font-size: 48px;
   //margin: 0.67em 0 1rem;
@@ -80,6 +96,7 @@ h1 {
 
 p {
   margin: 0;
+  line-height: 1.4;
 }
 
 p.hero {
@@ -109,20 +126,13 @@ a {
   a {
     flex: 1;
     text-align: center;
-    padding: 5px 3px 0;
+    padding: 5px 3px 1px;
     box-shadow: none;
   }
 
   svg {
     height: 2.75rem;
     width: 2.75rem;
-  }
-}
-@media (min-width: 550px) {
-  .social a {
-    margin-top: -2rem;
-    margin-left: 15px;
-    margin-right: 15px;
   }
 }
 
