@@ -59,12 +59,12 @@ section {
   width: 550px;
   display: flex;
   align-items: center;
-  > div {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    gap: 2rem;
-  }
+}
+section > div {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 2rem;
 }
 section.text {
   letter-spacing: -0.1px;
