@@ -6,7 +6,7 @@ _last updated 2024-11-04_
 
 ## Here's what I'm up to now
 
-🏡 building [Cabin](https://cabin.city), a network city of neighborhoods where you'd want to grow up.
+🏡 building [Cabin](https://cabin.city) -- a network city of walkable, long-term neighborhoods where you'd want to grow up.
 
 👪 raising a family with my wife, kids, and some quail.
 
