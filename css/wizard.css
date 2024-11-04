@@ -131,6 +131,10 @@ a:hover {
   width: 2.75rem;
 }
 
+.center {
+  text-align: center;
+}
+
 .grin {
   position: relative;
 }
