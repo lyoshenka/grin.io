@@ -15,10 +15,10 @@ I assume you're here because you want to pay me for something or just send me so
 
 Click addresses to expand and show QR code
 
-- BTC: `grin.btc` or `bc1q0xq8gvmjtgg2rsj282g8al5u8x2jkd9etft3lh`
-- ETH: `agrin.eth` or `0x3dedb545e9b89f63fa71ab75497735d802c9d26f` (mainnet, op, or base preferred)
-- USDC on Base: [Daimo](https://daimo.com/link/account/grin)
-- SOL: `grin.sol` or `7gTmu6nMCAR4URzcoJVvYx8bzeiWyQvrXLcp8ivuXu7v`
+- [Daimo](https://daimo.com/link/account/grin) `@grin`
+- `grin.btc` / `bc1q0xq8gvmjtgg2rsj282g8al5u8x2jkd9etft3lh`
+- `agrin.eth` / `0x3dedb545e9b89f63fa71ab75497735d802c9d26f`
+- `grin.sol` / `7gTmu6nMCAR4URzcoJVvYx8bzeiWyQvrXLcp8ivuXu7v`
 <!-- - LBC: `@grin` or `bTgZsMQaggj2j1wxsX7L5gciTX3g6vzKgX` -->
 
 
