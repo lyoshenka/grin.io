@@ -45,7 +45,9 @@ _numbered for ease of reference, not for priority_
 
 18. tools, not rules. e.g. [go fmt](https://go.dev/blog/gofmt) ([a](/archive/go.dev~blog~gofmt.html))
 
-19. first you don't know the rules, then you learn the rules, then you break the rules
+19. [RAT](https://terminal.hackernoon.com/the-mvp-is-dead-long-live-the-rat-233d5d16ab02), not MVP ([a](/archive/terminal.hackernoon.com~the-mvp-is-dead-long-live-the-rat-233d5d16ab02.html))
+
+20. first you don't know the rules, then you learn the rules, then you break the rules
 
 See also: [programming principles](https://en.wikipedia.org/wiki/Category:Programming_principles), [hacker laws](https://github.com/dwmkerr/hacker-laws) ([a](/archive/github.com~dwmkerr~hacker-laws.html)), [Dieter Rams' principles](https://github.com/zedr/dieter-rams-10-applied-to-software) ([a](/archive/github.com~zedr~dieter-rams-10-applied-to-software.html)), [the Zen of python](https://www.python.org/dev/peps/pep-0020/) ([a](/archive/python.org-dev-peps-pep-0020.html)), [Urbit precepts](https://urbit.org/docs/development/precepts) ([a](/archive/urbit.org-docs-development-precepts.html))
 
