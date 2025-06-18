@@ -10,10 +10,11 @@ _numbered for ease of reference, not for priority_
   - every line of code has costs (your time, readability, maintainability, complexity)
   - its like owning a house with lots of rooms. its nice when your friends come over once a month, but you pay rent every day
   - dont add features prematurely
+  - [another perspective](https://www.varunsrinivasan.com/2020/05/27/technical-shorts-not-technical-debt) ([a](/archive/varunsrinivasan.com~2020~05~27~technical-shorts-not-technical-debt.html))
 
 2. ~~DRY DRY [DRY](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself)~~ actually [DAMP](https://twitter.com/matryer/status/1082278413510082560) ([a](/img/damp.png)) is better
 
-3. keep it [simple](https://github.com/matthiasn/talk-transcripts/blob/master/Hickey_Rich/SimpleMadeEasy.md) ([a](/archive/github.com~matthiasn~talk-transcripts~blob~master~Hickey_Rich~SimpleMadeEasy.md.html)) (especially [at first](https://en.wikipedia.org/wiki/John_Gall_(author)#Gall.27s_law))
+3. keep it [simple](https://github.com/matthiasn/talk-transcripts/blob/master/Hickey_Rich/SimpleMadeEasy.md) ([a](/archive/github.com~matthiasn~talk-transcripts~blob~master~Hickey_Rich~SimpleMadeEasy.md.html)), especially [at first](https://en.wikipedia.org/wiki/John_Gall_(author)#Gall.27s_law)
 
 4. be consistent
 
