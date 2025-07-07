@@ -1,5 +1,5 @@
 ---
 layout: index
 title: Grin
-description: I make magic internet tech, currently @ cabin.city
+description: I make magic internet tech and social experiences
 ---
