@@ -4,11 +4,9 @@ image: /img/farcon-purpose-loop.png
 tags: [farcon]
 ---
 
-**FarCon is an IRL [memetic icon](https://lght.mirror.xyz/Av_4Vx1U9jDYgDzdrfWQD3FKuXUbMpQ9h5n-KlFz3KQ) for a URL community.**
+**FarCon is an IRL gathering for the [Farcaster](https://farcaster.xyz) digital community.**
 
-> The simplest way to think of _memetic icons_ are as containers or mental doorways. They act as the entry point to the information/context within them (the culture).
-
-A decentralized protocol requires a new kind of decentralized conference. FarCon is a reusable template, an overarching structure that organizers remix to create a unique instance of the event.
+A decentralized protocol requires a new kind of decentralized conference. The FarCon is a reusable template, an overarching structure that organizers remix to create a unique instance of the event. Historically, each FarCon is run by a different crew of organizers.
 
 **The core purpose of a FarCon is to deepen connections and promote collaboration**. Everything about FarCon is aligned towards these twin goals, which also support each other. Collaboration brings people closer, and people are more likely to work together with others whom they are close with.
 
@@ -20,6 +18,10 @@ The format of the event itself is highly collaborative. Organizers create the co
 
 That said, the bar to contribute is low and all genuine and creative gifts are welcome. You can participate just by being fully present or engaging in thoughtful conversation. It's mostly about the mindset.
 
-In summary:
+Farcaster is an evolving protocol, and FarCon changes with it. Every year will be different. A skillful remix should resonate with the current cultural moment while still paying homage to history and tradition.
 
-[![](/img/farcon-rules-cast.png)](https://warpcast.com/grin/0x39e1d2)
+Finally, my advice on running a great event:
+
+[![](/img/farcon-rules-cast.png)](https://farcaster.xyz/grin/0x39e1d2)
+
+If you're running a FarCon, reach out. I'm here for you.
