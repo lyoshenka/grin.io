@@ -4,7 +4,7 @@ priority: 2
 
 _numbered for ease of reference, not for priority_
 
-1. code is debt, and bad code is an [unhedged call option](https://www.castsoftware.com/blog/bad-code-isnt-technical-debt-its-an-unhedged-call-option) ([a](/archive/www.castsoftware.com~blog~bad-code-isnt-technical-debt-its-an-unhedged-call-option.html))
+1. code is debt, and bad code is an [unhedged call option](http://www.higherorderlogic.com/2010/07/bad-code-isnt-technical-debt-its-an-unhedged-call-option/) ([a](/archive/www.higherorderlogic.com~2010~07~bad-code-isnt-technical-debt-its-an-unhedged-call-option.html))
   - ![cant have 0-days or bugs if I dont write any code](/img/no-bugs.jpg)
   - our users dont care about the code
   - every line of code has costs (your time, readability, maintainability, complexity)
