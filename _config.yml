@@ -18,6 +18,7 @@ exclude:
   - /vendor
   - readme.md
   - CNAME
+  - mise.toml
 
 safe: true
 
