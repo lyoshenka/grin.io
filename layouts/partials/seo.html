@@ -1,0 +1,31 @@
+{{- $page := . -}}
+{{- $skipTitle := false -}}
+{{- if reflect.IsMap . -}}
+  {{- $page = .Page -}}
+  {{- with .TitleOverride -}}{{- else -}}
+    {{- $skipTitle = true -}}
+  {{- end -}}
+{{- end -}}
+{{- if not $skipTitle -}}
+  {{- if $page.IsHome -}}
+    <title>{{ $page.Site.Title }}</title>
+  {{- else -}}
+    <title>{{ $page.Title }} – {{ $page.Site.Title }}</title>
+  {{- end -}}
+{{- end }}
+<meta property="og:title" content="{{ $page.Title | default $page.Site.Title }}" />
+<meta property="og:type" content="{{ if $page.IsPage }}article{{ else }}website{{ end }}" />
+<meta property="og:url" content="{{ $page.Permalink }}" />
+{{- with $page.Params.image | default $page.Site.Params.logo }}
+<meta property="og:image" content="{{ . | absURL }}" />
+{{- end }}
+{{- with $page.Params.description | default $page.Description }}
+<meta property="og:description" content="{{ . }}" />
+<meta name="description" content="{{ . }}" />
+{{- end }}
+<meta property="og:site_name" content="{{ $page.Site.Title }}" />
+<meta name="twitter:card" content="{{ $page.Site.Params.twitter.card | default "summary" }}" />
+{{- with $page.Site.Params.twitter.username }}
+<meta name="twitter:site" content="@{{ . }}" />
+{{- end }}
+<link rel="canonical" href="{{ $page.Permalink }}" />

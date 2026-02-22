@@ -1,1 +1,0 @@
-[![](/img/photobooth-samurai.jpg)](/img/photobooth-samurai.jpg)

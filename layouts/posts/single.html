@@ -1,0 +1,16 @@
+{{ define "main" }}
+<div class="back"><a href="/posts">⇦ All Posts</a></div>
+
+<div class="header">
+  <h1>{{ .Title }}</h1>
+  <div class="date">{{ .Date.Format "January 2, 2006" }}</div>
+</div>
+
+<article>
+  {{ .Content }}
+</article>
+
+<div class="comment-link">
+  <a target="_blank" rel="noopener" href="mailto:a+{{ .File.ContentBaseName }}@grin.io?subject=re+%22{{ .Title | urlquery }}%22">Have a comment? Email me!</a>
+</div>
+{{ end }}

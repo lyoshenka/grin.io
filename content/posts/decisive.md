@@ -1,0 +1,137 @@
+---
+date: 2019-07-01
+show_subscribe: true
+title: Decisive Summary
+priority: 3
+tags: [summary, book, decisionmaking]
+---
+My summary of [Decisive](https://heathbrothers.com/books/decisive/), a book about a process for making better decisions.
+
+## The express version
+
+1. Widen Options: Add one more option to your consideration set. (If you can’t think of one easily, look for someone who’s solved your problem, via your network of contacts or a simple Internet search.)
+2. Reality-Test: Call one expert who can educate you about the “base rates” in your situation (for example, odds of success or typical timelines).
+3. Attain Distance: Resolve tough dilemmas by asking which option best fits your core priorities or what someone else (a friend or your successor) should do.
+4. Prepare: Bookend the future—spend an hour thinking about what could go wrong and what could go right, and then do something to prepare for both contingencies.
+
+## Problem: The Four Villains
+
+- Narrow framing (A or B)
+- Confirmation bias
+- Short-term emotion bias
+- Overconfidence
+
+## Intuition
+
+Intuition is only accurate in domains where it has been carefully trained. Training intuition requires a "kind" environment - one that is predictable, where you get lots of repetition and quick feedback on your choices. See book endnotes for more on this.
+
+## Solution: The WRAP Process
+
+- Widen your options
+- Reality-test assumptions
+- Attain distance before deciding
+- Prepare to be wrong
+
+## Widen Your Options
+
+### Avoid a narrow frame
+
+- Think about opportunity cost. Would I rather have X, or have Y and keep $14.99 for other purchases?
+- Vanishing Options Test. What if the current options disappeared and I had to do something else? What would I do?
+- Watch out for "whether or not" framing (e.g. "whether or not to drop out of school"). That should set off warning bells. Similarly,
+  "Should I do A or B?" is also narrow. Try to add at least one more option.
+
+### Multitrack (consider multiple options simultaneously)
+
+- Helps you learn the "shape" of the problem
+- Keeps egos in check. you don't get attached to a single option. and might be faster than single-tracking
+- You don't need a million options (there be decision paralysis), just one or two extra choices
+- Beware sham options (e.g. "nuclear war, present policy, surrender")
+- Toggle between prevention and promotion mindsets (avoiding negative outcomes and pursuing positive outcomes)
+- Push for "this AND that" rather than "this OR that"
+
+### Find someone who's solved your problem
+
+- When you need more options but are stuck, look for someone who's solved your problem
+- Look outside: competitive analysis, benchmarking, best practices
+- Look outside: find your bright spots. are there others in your group/org? what about your own personal bright spots?
+- Create a greatest hits decision playlist. a checklist prevents errors, a playlist stimulates new ideas.
+- Look in the distance: ladder up via analogies. start with close analogies (low novelty, low risk) and expand to broader & more abstract analogies (high novelty, high risk)
+- Why generate your own ideas when you can sample the world's buffet of options?
+
+## Reality-test Assumptions
+
+### Consider the opposite
+
+- Confirmation bias is self-serving. the hubris of CEOS can be counteracted by disagreement
+- Spark constructive disagreement inside the org. give license to skepticism. Ask "What would have to be true for this option to be the very best choice?"
+- Ask disconfirming questions. What problems does this thing have? Who were the last 3 people to leave the company? What are they doing now? How can I talk to them?
+- Caution: probing questions can backfire in situations with a power dynamic. e.g. doctors are wiser to as open-ended questions
+- Extreme disconfirmation: consider the opposite of your instincts. keep a gratitude diary in your relationship. assume positive intent.
+- Test assumptions with "deliberate mistakes". sometimes do the "wrong" thing - it may turn out to be right.
+
+### Zoom in, zoom out
+
+- We should trust "averages" (aka base rates) over our instincts much more than we do
+- Experts are great at estimating base rates (and helping you find the right base rate for your situation) but terrible at making specific predictions
+- Remember to start with the outside view
+- ... but also get a close up (inside view) to add nuance. go to the genba. stay in touch with reality
+
+### Ooch (run a small experiment to test a theory)
+
+- Try to dip a toe in before jumping headfirst
+- Especially useful because we're awful at predicting the future
+- Common in the startup world (mvp, customer dev, testing)
+- Caveat: ooching is counterproductive when you need to commit. if you know what to do but are dreading it, don't ooch, just commit.
+- Hiring: don't try to predict success. try to get a work sample or a trial run.
+- Why ever predict when you can know?
+
+## Attain Distance Before Deciding
+
+### Overcome short-term emotions
+
+- To overcome distracting short-term emotions, attain some distance.
+- 10/10/10 (minutes, months, years) provides distance by forcing us to consider future emotions as much as present ones.
+- Our decisions are often altered by two subtle short-term emotions: (1) mere exposure: we like what’s familiar to us; and (2) loss aversion: losses are more painful than gains are pleasant.
+- Loss aversion + mere exposure = bias for maintaining the status quo.
+- Attain distance by looking at our situation from an observer’s perspective. "What would our successors do?"
+- “What would I tell my best friend to do in this situation?”
+
+### Honor your core priorities
+
+- Agonizing decisions are often a sign of a conflict among your core priorities - long-term emotional values, goals, and aspirations (what kind of person do you want to be? what kind of organization do you want
+to build?)
+- The goal is not to eliminate emotion. It’s to honor the emotions that count.
+- By identifying and enshrining your core priorities, you make it easier to resolve present and future dilemmas.
+- Establishing your core priorities is, unfortunately, not the same as binding yourself to them. Many people don't regularly spend time on their core priorities.
+-To carve out space to pursue our core priorities, we must go on the offense against lesser priorities. Make a "List B" (the dreary, repetitive stuff that is important but not core) and declare war on it. Make a "stop-doing" list of things you will give up so that you have more time to spend on your priorities?
+- Set up an "hourly beep" to remind you to ask yourself "Am I doing what I most need to be doing right now?"
+
+
+## Prepare to Be Wrong
+
+### Bookend the future
+
+- The future is not a “point”—a single scenario that we must predict. It is a range. We should bookend the future, considering a range of outcomes from very bad to very good.
+- To set a lower bookend, use a premortem (It’s a year from now. Our decision has failed utterly. Why?). For the upper bookend, use a preparade (It’s a year from now. We’re heroes. Will we be ready for success?).
+- To prepare for what can’t be foreseen, we can use a “safety factor.” Multiply our best estimate by X, just in case.
+- Anticipating problems helps us cope with them. The “realistic job preview” that reveals a job’s warts up front “vaccinates” people against dissatisfaction.
+
+### Set a tripwire
+
+- We naturally slip into autopilot, leaving past decisions unquestioned.
+- A tripwire can remind us that we have a choice, or to reconsider a past decision. Zappos pays you $5K to quit so you reconsider your decision after you get a taste for their culture. The brown M&Ms signal that the contract wasn't read in depth and an inspection is necessary.
+- Tripwires are especially useful when change is gradual and there's no obvious time to act. They at least create a Schelling point.
+- Deadlines or partitions can be effective tripwires. We tend to escalate our investment in poor decisions; partitions can help rein that in.
+- Tripwires can actually create a safe space for risk taking. They: (1) cap risk; and (2) quiet your mind until the trigger is hit.
+- Many powerful tripwires are triggered by patterns rather than dates/metrics/budgets. For example, a children’s hospital told nurses to call the rapid-response team if they were "worried" about a patient. This was a qualitative tripwire, but it was very effective.
+- Tripwires can provide a precious realization: We have a choice to make.
+
+### Trusting the process
+
+- Decisions made by groups have an additional burden: They must be seen as fair.
+- Bargaining”—horse-trading until all sides can live with the choice—makes for good decisions that will be seen as fair. It takes more time up front, but accelerates implementation (because implementation buy-in is just as important as the decision itself).
+- Procedural justice (a fair process) is critical in determining how people feel about a decision (compare with distributive justice - the result of the decision).
+- Make sure people are able to perceive that the process is just. State back the other side’s position better than they could state it. Sometimes the best way to defend a decision is to point out its flaws.
+- Process isn’t glamorous. But the confidence it can provide is precious. Trusting a process can permit us to take bigger risks, to make bolder choices. Studies of the elderly show that people regret not what they did but what they didn’t do.
+

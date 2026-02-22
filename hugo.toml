@@ -1,0 +1,38 @@
+baseURL = "https://grin.io"
+title = "grin.io"
+languageCode = "en-US"
+timeZone = "America/New_York"
+enableEmoji = true
+
+[params]
+  author_name = "Grin"
+  author_email = "a@grin.io"
+  production_url = "https://grin.io"
+  logo = "/img/wizard-hat-social.png"
+
+[params.twitter]
+  username = "grin_io"
+  card = "summary"
+
+[permalinks]
+  posts = "/:contentbasename"
+
+[taxonomies]
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[mediaTypes]
+  [mediaTypes."application/atom+xml"]
+    suffixes = ["xml"]
+
+[outputFormats]
+  [outputFormats.Atom]
+    mediaType = "application/atom+xml"
+    baseName = "atom"
+    isPlainText = false
+
+[outputs]
+  home = ["HTML", "Atom"]

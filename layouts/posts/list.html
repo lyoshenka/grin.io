@@ -1,0 +1,31 @@
+{{ define "main" }}
+<div class="header">
+  <h1>{{ .Title }}</h1>
+</div>
+
+{{ .Content }}
+
+<h2>Popular</h2>
+<ul class="all-posts">
+{{- $starred := slice -}}
+{{- range where .Site.RegularPages "Section" "posts" -}}
+  {{- if and .Params.priority (lt (int .Params.priority) 999) -}}
+    {{- $starred = $starred | append . -}}
+  {{- end -}}
+{{- end -}}
+{{- range sort $starred ".Params.priority" -}}
+  <li>
+    ⭐ <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+  </li>
+{{- end -}}
+</ul>
+
+{{ range (where .Site.RegularPages "Section" "posts").GroupByDate "2006" }}
+  <h2>{{ .Key }}</h2>
+  <ul class="all-posts">
+    {{- range .Pages.ByDate.Reverse -}}
+      <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+    {{- end -}}
+  </ul>
+{{ end }}
+{{ end }}

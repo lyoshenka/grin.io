@@ -1,0 +1,23 @@
+{{ printf "<?xml version=\"1.0\" encoding=\"utf-8\"?>" | safeHTML }}
+<feed xmlns="http://www.w3.org/2005/Atom">
+ <title>{{ .Site.Title }}</title>
+ <link href="{{ .Site.Params.production_url }}/atom.xml" rel="self"/>
+ <link href="{{ .Site.Params.production_url }}/"/>
+ <updated>{{ now.Format "2006-01-02T15:04:05-07:00" }}</updated>
+ <id>{{ .Site.Params.production_url }}</id>
+ <author>
+   <name>{{ .Site.Params.author_name }}</name>
+   <email>{{ .Site.Params.author_email }}</email>
+ </author>
+
+ {{ range where .Site.RegularPages "Section" "posts" }}
+ <entry>
+   <title>{{ .Title | htmlEscape }}</title>
+   <link href="{{ .Site.Params.production_url }}{{ .RelPermalink }}"/>
+   <updated>{{ .Date.Format "2006-01-02T15:04:05-07:00" }}</updated>
+   <id>{{ .Permalink }}</id>
+   <content type="html">{{ .Content | htmlEscape }}</content>
+ </entry>
+ {{ end }}
+
+</feed>

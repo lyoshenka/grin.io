@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Grin the Web Wizard</title>
+    <link rel="stylesheet" type="text/css" href="/css/wizard.css" />
+    <link
+      rel="alternate"
+      href="/atom.xml"
+      title="{{ site.Title }}"
+      type="application/atom+xml"
+    />
+    {{ partial "seo.html" (dict "Page" . "TitleOverride" false "IsMap" true) }}
+  </head>
+
+  <body>
+    <main>
+      <section>
+        <pre id="art">
+{{ "<!--" | safeHTML }}
+       .*･｡.*･｡.*･｡.*･｡.*･｡.*･｡.*･｡.*･｡.*･｡.*･｡.*･｡
+      /                                        \
+      |                                        |
+      |  Any sufficiently advanced technology  |
+      |  is indistinguishable from magic.      |
+      |                                        |
+      \                                        /
+       ﾟ*･｡.*･｡.*･｡.*･｡.*･｡.*･｡.*･｡.*･｡.*･｡.*･｡.*･ﾟ
+                       \
+                        \
+                         \
+{{ "-->" | safeHTML }}              o
+                   O       /`-.__
+                          /  \·'^|
+             o           l    l  *
+                        _|-..-|_
+                 O    (^ '----' `)
+                       `\-....-/^
+             O       o  ) "/ " (
+                       _( ~_~  )_
+                   O  /\ )    (  /\
+                     /  \(    ) |  \
+                 o  /o   \)  ( /    \
+                   /     |(  )|      \
+                  /    o \ \( /       \
+            __.--'   O    \_ /   .._   \
+           //|)\      ,   (_)   /(((\^)'\
+              |       | O         )  `  |
+              |      / ____o     /      /
+             /  _.-''^^____^^''-._     /
+           .'  /  -''^^    ^^''-  \--'^
+         .'   .`.  `'''----'''^  .`. \
+       .'    /   `'--..____..--'^   \ \
+      /  _.-/                        \ \
+  .::'_/^   |                        |  `.
+         .-'|                        |    `-.
+   _.--'`   \                        /       `-.
+  /          \                      /           `-._
+  `'---..__   `.                  .´_.._   __       \
+           ``'''`.              .'      `'^  `''---'^
+                  `-..______..-'
+        </pre>
+      </section>
+
+      <section class="text">
+        <div>
+          <div>
+            <h1>Hi, I'm <span class="grin">Grin</span></h1>
+          </div>
+
+          <p class="hero">I'm a web wizard.</p>
+
+          <p>
+            🪐 For work I build AI agents at <a href="https://neynar.com">Neynar</a>. The agents
+            live on the <a href="https://farcaster.xyz">Farcaster</a> decentralized social protocol.
+          </p>
+
+          <p>
+            🧑‍🤝‍🧑 On the side I create IRL gatherings for URL communities such as
+            <a href="https://vibe.camp">Vibecamp</a>,
+            <a href="https://farcon.xyz">FarCon</a>,
+            <a href="/archive/tns.camp.html">TNS Camp</a>, and
+            <a href="https://fractal.boston">Fractal Boston</a>.
+          </p>
+
+          <p>
+            🏡 Previously I was on the core team of
+            <a href="https://cabin.city">Cabin</a>, a network city of modern
+            villages.
+          </p>
+
+          <p>
+            🌐 Before Cabin I founded <a href="https://lbry.com">LBRY</a>, a
+            decentralized digital content protocol. At peak it was the most-used
+            crypto app in the world, with over 40 million users via
+            <a href="https://odysee.com">Odysee</a> (our web3 video app).
+          </p>
+
+          <p>
+            🥏 I'm an ex-pro ultimate frisbee player. My team won the first ever
+            <a href="https://watchufa.com">UFA</a> championship. I've also
+            played club ultimate on several elite teams, winning silver at USA
+            Nationals in 2016 and a top-8 finish at Masters Worlds in 2022.
+          </p>
+
+          <p>
+            🏆 During my Ultimate arc I founded
+            <a href="https://usetopscore.com">TopScore</a>, a sports event
+            management app. It now serves over a million athletes across
+            thousands of orgs in dozens of countries around the world.
+          </p>
+
+          <p class="center">
+            <a href="/posts">writing</a> |
+            <a href="https://github.com/lyoshenka">code</a> |
+            <a href="/now">now</a> | <a href="https://grin.contact">contact</a>
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <script>
+      document.querySelectorAll("a:not(.internal)").forEach((link) => {
+        if (link.hostname === window.location.hostname) return;
+        link.target = "_blank";
+        link.rel = (link.rel + " noopener noreferrer").trim();
+      });
+    </script>
+
+    <script type="text/javascript" src="/js/bubbles.js"></script>
+
+    {{ partial "piwik.html" . }}
+  </body>
+</html>
