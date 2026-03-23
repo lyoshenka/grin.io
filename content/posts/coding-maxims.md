@@ -30,7 +30,7 @@ _numbered for ease of reference, not for priority_
 
 9. ship early, ship often
 
-10. first code, then ship, then measure, *then* optimize
+10. first code, then ship, [then measure](https://www.cs.unc.edu/~stotts/COMP590-059-f24/robsrules.html) ([a](/archive/www.cs.unc.edu~~stotts~COMP590-059-f24~robsrules.html)), *then* optimize
 
 11. remember the [80/20 rule](https://en.wikipedia.org/wiki/Pareto_principle), and the [90/90 rule](https://en.wikipedia.org/wiki/Ninety-ninety_rule)
 
