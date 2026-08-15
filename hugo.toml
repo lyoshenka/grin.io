@@ -1,6 +1,6 @@
 baseURL = "https://grin.io"
 title = "grin.io"
-languageCode = "en-US"
+locale = "en-US"
 timeZone = "America/New_York"
 enableEmoji = true
 
